@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Рогач](https://up.htmlacademy.ru/adaptive/20/user/798729).
-* Наставник: Дмитрий Иовлев.
+* Наставник: [Дмитрий Иовлев](https://up.htmlacademy.ru/adaptive/20/user/200490).
 
 ---
 
