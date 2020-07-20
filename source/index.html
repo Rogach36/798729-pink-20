@@ -13,40 +13,49 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="vissualli-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <!--обертка для позиционирования меню-->
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="#">Фотографии</a></li>
-          <li class="site-list__item"><a href="#">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
-        </ul>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a href="#">Фотографии</a></li>
+            <li class="site-list__item"><a href="#">Конкурс</a></li>
+            <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          </ul>
       </div>
       </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение для редактирования фотографий</h1>
-      <section class="download">
+      <section class="download-header">
         <h2 class="visually-hidden">Скачать приложение для разных платформ</h2>
-        <p class="download__slogan">Взгляните на жизнь иначе!</p>
-        <a class="download-btn" href="#">Скачать приложение</a>
-        <ul class="download__list platform-list">
-          <li class="platform-list__item"><a href="#">
-            <img src="https://via.placeholder.com" width="46" height="56" alt="Apple">
-          </a></li>
-          <li class="platform-list__item"><a href="#">
-            <img src="https://via.placeholder.ёcom" width="43" height="47" alt="Android">
-          </a></li>
-          <li class="platform-list__item"><a href="#">
-            <img src="https://via.placeholder.com" width="44" height="41" alt="Windows">
-          </a></li>
+        <p class="download-header__slogan">Взгляните на жизнь иначе!</p>
+        <a class="download-header-btn" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+        <ul class="download-header__list platform-list">
+          <li class="platform-list__item item-icon"><a href="https://www.apple.com/ios/app-store/">
+            <div class="item-icon__app-store">
+              <span class="visually-hidden">Иконка appstore</span>
+          </div>
+          </a>
+        </li>
+          <li class="platform-list__item item-icon"><a href="https://play.google.com/store?hl=ru">
+            <div class="item-icon__android">
+              <span class="visually-hidden">Иконка android</span>
+          </div>
+          </a>
+        </li>
+          <li class="platform-list__item item-icon"><a href="https://www.microsoft.com/ru-ru/store/apps">
+            <div class="item-icon__microsoft">
+              <span class="visually-hidden">Иконка microsoft</span>
+          </div>
+          </a>
+        </li>
         </ul>
-        <p class="download__info">
+        <p class="download-header__info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение для редактирования фотографий</h1>
       <section class="features">
         <h2 class="visually-hidden">Преимущества приложения</h2>
         <p class="features__slogan">Устали от серости мегаполиса?</p>
@@ -72,18 +81,16 @@
     <footer class="page-footer">
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__invite">Остались вопросы?
-          Свяжитесь с нами!</p>
+        <address>
+          <p class="contacts__invite">Остались вопросы? Свяжитесь с нами!</p>
           <p class="contacts__phone-title">Звоните:</p>
-          <a class="contacts__phone" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
           <p class="contacts__address-title">Приезжайте в гости:</p>
           <p class="contacts__addres">ул. Большая Конюшенная, 19/8</p>
+        </address>
+        <iframe class="contacts__map" src="#"></iframe>
       </section>
-      <section class="page-footer__location">
-        <h2 class="vissually-hidden">Расположение на карте</h2>
-        <iframe src="" frameborder="0"></iframe>
-      </section>
-      <section class="page-footer__social social">
+      <div class="page-footer__social social">
         <a class="page-footer__logo" href="#">
           <img src="https://via.placeholder.com" width="145" height="40" alt="Приложение Pink">
         </a>
@@ -98,14 +105,11 @@
             <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
           </li>
         </ul>
-      </section>
-      <section class="page-footer__copyright">
+      </div>
+      <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__ link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </section>
+      </div>
     </footer>
-
-
-
   </body>
 </html>
