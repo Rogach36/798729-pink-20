@@ -59,7 +59,20 @@
       </fieldset>
       <label class="user-form__phone">Номер телефона<input class="user-form__field-phone" type="text" type="text" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона"></label>
       <label class="user-form__email">Адрес почты<input class="user-form__field-email" type="text"  type="text" name="email" placeholder="Введите почту*" aria-label="Поле для email"></label>
-
+      <fieldset class="user-form__application-list">
+        <legend class="user-form__app-list-title">С каким приложением путешествовали?</legend>
+            <ul class="user-form__app-list">
+            <li class="user-form__selection-item selection-list">
+                <label class="selection-list__label-radio">Pink для iOS<input class="visually-hidden  filter-input__radio" type="radio" name="platform" value="ios" checked></label>
+            </li>
+            <li class="user-form__selection-item selection-list">
+                <label class="selection-list__label-radio">Pink на Android<input class="visually-hidden  filter-input__radio" type="radio" name="platform" value="android"></label>
+            </li>
+            <li class="user-form__selection-item selection-list">
+                <label class="selection-list__label-radio">Windows Phone<input class="visually-hidden  filter-input__radio" type="radio" name="platform" value="windows"></label>
+            </li>
+        </ul>
+    </fieldset>
     </section>
   </main>
   <footer class="page-footer">
