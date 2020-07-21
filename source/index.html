@@ -4,50 +4,61 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page___body">
+  <body class="page-body">
     <header class="page-header">
       <!-- В дальнейшем буду использовать этот логотип на других страницах,
       поэтому делаю блоком -->
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo">
         <img src="https://via.placeholder.com" width="74" height="23" alt="Приложение Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть или закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <!--обертка для позиционирования меню-->
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="#">Фотографии</a></li>
-            <li class="site-list__item"><a href="#">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">HTML Academy</a></li>
-          </ul>
-      </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        </div>
       </nav>
       <section class="download-header">
         <h2 class="visually-hidden">Скачать приложение для разных платформ</h2>
         <p class="download-header__slogan">Взгляните на жизнь иначе!</p>
-        <a class="download-header-btn" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+        <a class="download-header-btn" href="#">Скачать приложение</a>
         <ul class="download-header__list platform-list">
-          <li class="platform-list__item item-icon"><a href="https://www.apple.com/ios/app-store/">
-            <div class="item-icon__app-store">
-              <span class="visually-hidden">Иконка appstore</span>
-          </div>
-          </a>
-        </li>
-          <li class="platform-list__item item-icon"><a href="https://play.google.com/store?hl=ru">
-            <div class="item-icon__android">
-              <span class="visually-hidden">Иконка android</span>
-          </div>
-          </a>
-        </li>
-          <li class="platform-list__item item-icon"><a href="https://www.microsoft.com/ru-ru/store/apps">
-            <div class="item-icon__microsoft">
-              <span class="visually-hidden">Иконка microsoft</span>
-          </div>
-          </a>
-        </li>
+          <li class="platform-list__item platform-list__item--appsotre">
+            <a href="https://www.apple.com/ios/app-store/">
+              <span class="visually-hidden">
+              AppStore
+              </span>
+            </a>
+          </li>
+          <li class="platform-list__item platform-list__item--android">
+            <a href="https://play.google.com/store?hl=ru">
+              <span class="visually-hidden">
+              Android
+              </span>
+            </a>
+          </li>
+          <li class="platform-list__item platform-list__item--microsoft">
+            <a href="https://www.microsoft.com/ru-ru/store/apps">
+              <span class="visually-hidden">
+              Microsoft
+              </span>
+            </a>
+          </li>
         </ul>
         <p class="download-header__info">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -82,13 +93,17 @@
       <section class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <address>
-          <p class="contacts__invite">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__invite">Остались вопросы?
+          Свяжитесь с нами!</p>
           <p class="contacts__phone-title">Звоните:</p>
           <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
           <p class="contacts__address-title">Приезжайте в гости:</p>
           <p class="contacts__addres">ул. Большая Конюшенная, 19/8</p>
         </address>
-        <iframe class="contacts__map" src="#"></iframe>
+      </section>
+      <section class="page-footer__location">
+        <h2 class="visually-hidden">Расположение на карте</h2>
+        <iframe src="#"></iframe>
       </section>
       <div class="page-footer__social social">
         <a class="page-footer__logo" href="#">
@@ -96,20 +111,23 @@
         </a>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы в Ютюбе"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__ link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+
+
+
   </body>
 </html>
