@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img src="https://via.placeholder.com" width="74" height="23" alt="Приложение Pink">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <!--обертка для позиционирования меню-->
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
+          <li class="site-list__item"><a href="#">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-header__title">Фотографии пользователей</h1>
+  </header>
+  <main class="page-main">
+    <section class="users-photo">
+      <h2 class="visually-hidden">Образцы и редактор фото</h2>
+      <p class="users-photo__appeal">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+      <ul class="users-photo__list photo-catalogue">
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Анна <span>(5 минут назад)</span></p>
+            <p class="photo-catalogue__user-comment">Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 215</p>
+          </div>
+        </li>
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Левон <span>(5 часов назад)</span></p>
+            <p class="photo-catalogue__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 356</p>
+          </div>
+        </li>
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Антон <span>(12 часов назад)</span></p>
+            <p class="photo-catalogue__user-comment">Соседи будут рады!</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 666</p>
+          </div>
+        </li>
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Борис <span>(20 часов назад)</span></p>
+            <p class="photo-catalogue__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 215</p>
+          </div>
+        </li>
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Сергей <span>(25 часов назад)</span></p>
+            <p class="photo-catalogue__user-comment">Самая кубанская в мире!</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 4</p>
+          </div>
+        </li>
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Максим <span>(40 часов назад)</span></p>
+            <p class="photo-catalogue__user-comment">Где снег-то?</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 150</p>
+          </div>
+        </li>
+        <li class="photo-catalogue__item">
+          <div class="photo-catalogue__user-card">
+            <a class="photo-catalogue__photo" href="#">
+              <img src="#" alt="Фото пользователя">
+            </a>
+            <p class="photo-catalogue__user-name">Надежда <span>(45 часов назад)</span></p>
+            <p class="photo-catalogue__user-comment">Всем GM и взаимные лайки!</p>
+            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <p class="photo-catalogue__reaction">Нравится: 2560</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <address>
+        <p class="contacts__invite">Остались вопросы?
+        Свяжитесь с нами!</p>
+        <p class="contacts__phone-title">Звоните:</p>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <p class="contacts__address-title">Приезжайте в гости:</p>
+        <p class="contacts__addres">ул. Большая Конюшенная, 19/8</p>
+      </address>
+      <iframe src="#" aria-label="Расположение на карте"></iframe>
+    </section>
+    <div class="page-footer__social social">
+      <a class="page-footer__logo" href="#">
+        <img src="https://via.placeholder.com" width="145" height="40" alt="Приложение Pink">
+      </a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#" aria-label="Мы в Твиттере"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" aria-label="Мы в Ютюбе"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+</html>
