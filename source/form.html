@@ -35,46 +35,80 @@
         <label class="form__sename">Фамилия:<input class="form__field-sername" type="text" name="sername" placeholder="Укажите фамилию*" aria-label="Поле для фамилии"></label>
         <label class="form__name">Имя:<input class="form__field-name" type="text" name="name" placeholder="Введите ваше имя*" aria-label="Поле для имени"></label>
         <label class="form__middle-name">Отчество:<input class="form__field-middlename" type="text" name="name" placeholder="Ну и отчество тоже" aria-label="Поле для отчества"></label>
-        <fieldset class="form__adventure-list">
+        <fieldset class="form__fieldset">
           <legend class="form__list-title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__checklist checklist">
               <li class="checklist__item checklist-point">
-                  <label class="checklist-point__label-checkbox">Сделал селфи с акулой<input class="visually-hidden checklist-point__checkbox" type="checkbox" name="selfie" value="photo-shark" checked></label>
+                <p>
+                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="selfie" value="photo-shark" checked id="selfie">
+                  <label class="checklist-point__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+                </p>
               </li>
               <li class="checklist__item checklist-point">
-                  <label class="checklist-point__label-checkbox">Обгорел на пляже<input class="visually-hidden checklist-point__checkbox" type="checkbox" name="bech" value="photo-burn" checked></label>
+                <p>
+                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="beach" value="photo-burn" checked id="beach">
+                  <label class="checklist-point__label-checkbox" for="beach">Обгорел на пляже</label>
+                </p>
               </li>
               <li class="checklist__item checklist-point">
-                  <label class="checklist-point__label-checkbox">Видел Чака Норриса<input class="visually-hidden checklist-point__checkbox" type="checkbox" name="selebrity" value="meeting"></label>
+                <p>
+                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="selebrity" value="meeting" id="norris">
+                  <label class="checklist-point__label-checkbox" for="norris">Видел Чака Норриса</label>
+                </p>
               </li>
               <li class="checklist__item checklist-point">
-                  <label class="checklist-point__label-checkbox">Накупил сувениров<input class="visually-hidden checklist-point__checkbox" type="checkbox" name="shoping" value="souvenir"></label>
+                <p>
+                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="shoping" value="souvenir" id="buy">
+                  <label class="checklist-point__label-checkbox" for="buy">Накупил сувениров</label>
+                </p>
               </li>
               <li class="checklist__item checklist-point">
-                  <label class="checklist-point__label-checkbox">Удержал башню<input class="visually-hidden checklist-point__checkbox" type="checkbox" name="pisa" value="tower" checked></label>
+                <p>
+                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="pisa" value="tower" checked id="pisa">
+                  <label class="checklist-point__label-checkbox" for="pisa">Удержал башню</label>
+                </p>
               </li>
               <li class="checklist__item checklist-point">
-                  <label class="checklist-point__label-checkbox">Разгромил отель<input class="visually-hidden checklist-point__checkbox" type="checkbox" name="hotel" value="disorder"></label>
+                <p>
+                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="hotel" value="disorder" id="hotel">
+                  <label class="checklist-point__label-checkbox" for="hotel">Разгромил отель</label>
+                </p>
               </li>
           </ul>
         </fieldset>
-        <label class="form__phone">Номер телефона<input class="form__field-phone" type="text" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона"></label>
-        <label class="form__email">Адрес почты<input class="form__field-email" type="text" name="email" placeholder="Введите почту*" aria-label="Поле для email"></label>
-        <fieldset class="form__application-list">
+        <fieldset class="form__fieldset">
+          <input class="form__field-phone" type="text" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
+          <label class="form__phone" for="phone">Номер телефона</label>
+          <input class="form__field-email" type="text" name="email" placeholder="Введите почту*" aria-label="Поле для email" id="email">
+          <label class="form__email" for="email">Адрес почты</label>
+        </fieldset>
+        <fieldset class="form__fieldset">
           <legend class="form__app-list-title">С каким приложением путешествовали?</legend>
-              <ul class="form__app-list">
-              <li class="form__selection-item selection-list">
-                  <label class="selection-list__label-radio">Pink для iOS<input class="visually-hidden  selection-list__radio" type="radio" name="platform" value="ios" checked></label>
-              </li>
-              <li class="user-form__selection-item selection-list">
-                  <label class="selection-list__label-radio">Pink на Android<input class="visually-hidden  selection-list__radio" type="radio" name="platform" value="android"></label>
-              </li>
-              <li class="user-form__selection-item selection-list">
-                  <label class="selection-list__label-radio">Windows Phone<input class="visually-hidden  selection-list__radio" type="radio" name="platform" value="windows"></label>
-              </li>
-          </ul>
+          <ul class="form__app-list">
+            <li class="form__selection-item selection-list">
+              <p>
+                <input class="visually-hidden  selection-list__radio" type="radio" name="platform" value="ios" checked id="apple">
+                <label class="selection-list__label-radio" for="apple">Pink для iOS</label>
+              </p>
+            </li>
+            <li class="user-form__selection-item selection-list">
+              <p>
+                <input class="visually-hidden  selection-list__radio" type="radio" name="platform" value="android" id="google">
+                <label class="selection-list__label-radio" for="google">Pink на Android</label>
+              </p>
+            </li>
+            <li class="user-form__selection-item selection-list">
+              <p>
+                <input class="visually-hidden  selection-list__radio" type="radio" name="platform" value="windows" id="msoft">
+                <label class="selection-list__label-radio" for="msoft">Windows Phone</label>
+              </p>
+            </li>
+            </ul>
         </fieldset>
-        <label class="form__user-letter letter">Опишите свои эмоции<textarea class="letter__field-message" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле для сообщения"></textarea></label>
+        <fieldset class="form__fieldset">
+          <textarea class="letter__field-message" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле для сообщения" id="message"></textarea>
+          <label class="form__user-letter letter" for="message">Опишите свои эмоции</label>
+        </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
         <p class="form__note">* — обязательные поля</p>
       </form>>
