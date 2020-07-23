@@ -117,19 +117,18 @@
     <section class="editor">
       <h2 class="visually-hidden">Редактор изображений</h2>
       <div class="editor__pic">Фото для редактирования</div>
-      <ul class="editor__panel-list">
-          <li><button class="editor__btn editor__btn--crop editor__btn--active"></button></li>
-          <li><button class="editor__btn editor__btn--fill"></button></li>
-          <li><button class="editor__btn editor__btn--light"></button></li>
-      </ul>
-      <div class="editor__range-controls range-controls">
-        <div class="range-controls__scale">
-          <div class="range-controls__bar"></div>
-        </div>
-        <div class="range-controls__toggle"></div>
-      </div>
-      <div class="editor__button-publish">Запостить</div>
-      <div class="editor__button-cancel">Отмена</div>
+      <form class="editor__panel setting" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="setting__list">
+          <li><button class="setting__btn setting__btn--crop setting__btn--active"></button></li>
+          <li><button class="setting__btn setting__btn--fill"></button></li>
+          <li><button class="setting__btn setting__btn--light"></button></li>
+        </ul>
+        <input class="setting__range setting__range--crop" type="range">
+        <input class="setting__range setting__range--fill" type="range">
+        <input class="setting__range setting__range--light" type="range">
+        <button class="setting__range__button" type="submit">Запостить</button>
+        <button class="setting__range__button" type="submit">Отмена</button>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
