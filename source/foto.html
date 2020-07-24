@@ -6,7 +6,7 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">
+    <a class="page-header__logo" href="index.html">
       <img src="https://via.placeholder.com" width="74" height="23" alt="Приложение Pink">
     </a>
     <nav class="main-nav">
@@ -34,7 +34,7 @@
         <li class="photo-catalogue__item">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
-              <img src="#" alt="Фото пользователя">
+              <img class="photo-catalogue__img-marker" src="#" alt="Фото пользователя">
             </a>
             <p class="photo-catalogue__user-name">Анна <span>(5 минут назад)</span></p>
             <p class="photo-catalogue__user-comment">Прыгать или нет? Напишите в
@@ -52,7 +52,7 @@
             </a>
             <p class="photo-catalogue__user-name">Левон <span>(5 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 356</p>
           </div>
         </li>
@@ -63,7 +63,7 @@
             </a>
             <p class="photo-catalogue__user-name">Антон <span>(12 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Соседи будут рады!</p>
-            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 666</p>
           </div>
         </li>
@@ -74,7 +74,7 @@
             </a>
             <p class="photo-catalogue__user-name">Борис <span>(20 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 215</p>
           </div>
         </li>
@@ -85,7 +85,7 @@
             </a>
             <p class="photo-catalogue__user-name">Сергей <span>(25 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Самая кубанская в мире!</p>
-            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 4</p>
           </div>
         </li>
@@ -96,7 +96,7 @@
             </a>
             <p class="photo-catalogue__user-name">Максим <span>(40 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Где снег-то?</p>
-            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 150</p>
           </div>
         </li>
@@ -107,13 +107,29 @@
             </a>
             <p class="photo-catalogue__user-name">Надежда <span>(45 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Всем GM и взаимные лайки!</p>
-            <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
+            <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 2560</p>
           </div>
         </li>
       </ul>
+      <p class="users-photo-call">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
-
+    <section class="editor">
+      <h2 class="visually-hidden">Редактор изображений</h2>
+      <div class="editor__pic">Фото для редактирования</div>
+      <form class="editor__panel setting" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="setting__list">
+          <li><button class="setting__btn setting__btn--crop setting__btn--active" aria-label="Кнопка обрезки фото"></button></li>
+          <li><button class="setting__btn setting__btn--fill" aria-label="Кнопка заливки"></button></li>
+          <li><button class="setting__btn setting__btn--light" aria-label="Кнопка коррекции освещения"></button></li>
+        </ul>
+        <input class="setting__range" type="range">
+        <input class="setting__range" type="range">
+        <input class="setting__range" type="range">
+        <button class="setting__submit-btn setting__submit-btn--publish" type="submit">Запостить</button>
+        <button class="setting__submit-btn setting__submit-btn--cancel" type="submit">Отмена</button>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <section class="page-footer__contacts contacts">
