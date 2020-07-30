@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="page-header">
@@ -16,10 +17,10 @@
       <div class="main-nav__wrapper">
         <!--обертка для позиционирования меню-->
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a href="#">Фотографии</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="foto.html">Фотографии</a></li>
           <li class="site-list__item"><a>Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
         </ul>
       </div>
     </nav>
@@ -32,7 +33,7 @@
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
       <form class="user-info__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--bg-white">
           <p>
             <input class="form__input" type="text" name="sername" placeholder="Укажите фамилию*" id="sername">
             <label class="form__label" for="sername">Фамилия:</label>
@@ -46,54 +47,54 @@
             <label class="form__label" for="middlename">Отчество:</label>
           </p>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--bg-grey">
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="form__checklist checklist">
-              <li class="checklist__item checklist-point">
+          <ul class="form__checklist">
+              <li class="form__checklist-item">
                 <p>
-                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="selfie" value="photo-shark" checked id="selfie">
-                  <label class="checklist-point__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+                  <input class="visually-hidden form__checklist-input" type="checkbox" name="selfie" value="photo-shark" checked id="selfie">
+                  <label class="form__checklist-label" for="selfie">Сделал селфи с акулой</label>
                 </p>
               </li>
-              <li class="checklist__item checklist-point">
+              <li class="checklist__item">
                 <p>
-                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="beach" value="photo-burn" checked id="beach">
-                  <label class="checklist-point__label-checkbox" for="beach">Обгорел на пляже</label>
+                  <input class="visually-hidden form__checklist-input" type="checkbox" name="beach" value="photo-burn" checked id="beach">
+                  <label class="form__checklist-label" for="beach">Обгорел на пляже</label>
                 </p>
               </li>
-              <li class="checklist__item checklist-point">
+              <li class="checklist__item">
                 <p>
-                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="selebrity" value="meeting" id="norris">
-                  <label class="checklist-point__label-checkbox" for="norris">Видел Чака Норриса</label>
+                  <input class="visually-hidden form__checklist-input" type="checkbox" name="selebrity" value="meeting" id="norris">
+                  <label class="form__checklist-label" for="norris">Видел Чака Норриса</label>
                 </p>
               </li>
-              <li class="checklist__item checklist-point">
+              <li class="checklist__item">
                 <p>
-                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="shoping" value="souvenir" id="buy">
-                  <label class="checklist-point__label-checkbox" for="buy">Накупил сувениров</label>
+                  <input class="visually-hidden form__checklist-input" type="checkbox" name="shoping" value="souvenir" id="buy">
+                  <label class="form__checklist-label" for="buy">Накупил сувениров</label>
                 </p>
               </li>
-              <li class="checklist__item checklist-point">
+              <li class="checklist__item">
                 <p>
-                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="pisa" value="tower" checked id="pisa">
-                  <label class="checklist-point__label-checkbox" for="pisa">Удержал башню</label>
+                  <input class="visually-hidden form__checklist-input" type="checkbox" name="pisa" value="tower" checked id="pisa">
+                  <label class="form__checklist-label" for="pisa">Удержал башню</label>
                 </p>
               </li>
-              <li class="checklist__item checklist-point">
+              <li class="checklist__item">
                 <p>
-                  <input class="visually-hidden checklist-point__checkbox" type="checkbox" name="hotel" value="disorder" id="hotel">
-                  <label class="checklist-point__label-checkbox" for="hotel">Разгромил отель</label>
+                  <input class="visually-hidden form__checklist-input" type="checkbox" name="hotel" value="disorder" id="hotel">
+                  <label class="form__checklist-label" for="hotel">Разгромил отель</label>
                 </p>
               </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--bg-white">
           <input class="form__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
           <label class="form__label" for="phone">Номер телефона</label>
           <input class="form__input" type="email" name="email" placeholder="Введите почту*" aria-label="Поле для email" id="email">
           <label class="form__label" for="email">Адрес почты</label>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--bg-grey">
           <legend class="form__legend">С каким приложением путешествовали?</legend>
           <ul class="form__app-list">
             <li class="form__selection-item selection-list">
@@ -116,28 +117,16 @@
             </li>
             </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--bg-white">
           <textarea class="form__field-message" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле для сообщения" id="message"></textarea>
-          <label class="form__user-letter letter" for="message">Опишите свои эмоции</label>
+          <label class="form__label" for="message">Опишите свои эмоции</label>
         </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
         <p class="form__note">* — обязательные поля</p>
-      </form>>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <address>
-        <p class="contacts__invite">Остались вопросы?
-        Свяжитесь с нами!</p>
-        <p class="contacts__phone-title">Звоните:</p>
-        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        <p class="contacts__address-title">Приезжайте в гости:</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, 19/8</p>
-      </address>
-      <iframe src="#" aria-label="Расположение на карте"></iframe>
-    </section>
     <div class="page-footer__social social">
       <a class="page-footer__logo" href="#">
         <img src="https://via.placeholder.com" width="145" height="40" alt="Приложение Pink">
@@ -156,7 +145,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 </body>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header class="page-header">
@@ -16,10 +17,10 @@
       <div class="main-nav__wrapper">
         <!--обертка для позиционирования меню-->
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-          <li class="site-list__item"><a href="#">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
         </ul>
       </div>
     </nav>
@@ -36,7 +37,7 @@
             <a class="photo-catalogue__photo" href="#">
               <img class="photo-catalogue__img-marker" src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Анна <span>(5 минут назад)</span></p>
+            <p class="photo-catalogue__user-name">Анна <span class="photo-catalogue__time">(5 минут назад)</span></p>
             <p class="photo-catalogue__user-comment">Прыгать или нет? Напишите в
               комментарии свой совет и
               смотрите прямую трансляцию в
@@ -50,7 +51,7 @@
             <a class="photo-catalogue__photo" href="#">
               <img src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Левон <span>(5 часов назад)</span></p>
+            <p class="photo-catalogue__user-name">Левон <span class="photo-catalogue__time">(5 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 356</p>
@@ -61,7 +62,7 @@
             <a class="photo-catalogue__photo" href="#">
               <img src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Антон <span>(12 часов назад)</span></p>
+            <p class="photo-catalogue__user-name">Антон <span class="photo-catalogue__time">(12 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Соседи будут рады!</p>
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 666</p>
@@ -72,7 +73,7 @@
             <a class="photo-catalogue__photo" href="#">
               <img src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Борис <span>(20 часов назад)</span></p>
+            <p class="photo-catalogue__user-name">Борис <span class="photo-catalogue__time">(20 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 215</p>
@@ -83,7 +84,7 @@
             <a class="photo-catalogue__photo" href="#">
               <img src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Сергей <span>(25 часов назад)</span></p>
+            <p class="photo-catalogue__user-name">Сергей <span class="photo-catalogue__time">(25 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Самая кубанская в мире!</p>
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 4</p>
@@ -94,7 +95,7 @@
             <a class="photo-catalogue__photo" href="#">
               <img src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Максим <span>(40 часов назад)</span></p>
+            <p class="photo-catalogue__user-name">Максим <span class="photo-catalogue__time">(40 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Где снег-то?</p>
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 150</p>
@@ -105,17 +106,17 @@
             <a class="photo-catalogue__photo" href="#">
               <img src="#" alt="Фото пользователя">
             </a>
-            <p class="photo-catalogue__user-name">Надежда <span>(45 часов назад)</span></p>
+            <p class="photo-catalogue__user-name">Надежда <span class="photo-catalogue__time">(45 часов назад)</span></p>
             <p class="photo-catalogue__user-comment">Всем GM и взаимные лайки!</p>
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 2560</p>
           </div>
         </li>
       </ul>
-      <p class="users-photo-call">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="editor">
       <h2 class="visually-hidden">Редактор изображений</h2>
+      <p class="editor__photo-call">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="editor__pic">Фото для редактирования</div>
       <form class="editor__panel setting" action="https://echo.htmlacademy.ru" method="post">
         <ul class="setting__list">
@@ -132,18 +133,6 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <address>
-        <p class="contacts__invite">Остались вопросы?
-        Свяжитесь с нами!</p>
-        <p class="contacts__phone-title">Звоните:</p>
-        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        <p class="contacts__address-title">Приезжайте в гости:</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, 19/8</p>
-      </address>
-      <iframe src="#" aria-label="Расположение на карте"></iframe>
-    </section>
     <div class="page-footer__social social">
       <a class="page-footer__logo" href="#">
         <img src="https://via.placeholder.com" width="145" height="40" alt="Приложение Pink">
@@ -162,7 +151,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 </body>

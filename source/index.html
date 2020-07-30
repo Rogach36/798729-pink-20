@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <!-- В дальнейшем буду использовать этот логотип на других страницах,
       поэтому делаю блоком -->
       <a class="page-header__logo">
@@ -22,13 +23,13 @@
               <a>Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a href="foto.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </li>
         </ul>
       </div>
@@ -69,8 +70,10 @@
       <h1 class="visually-hidden">Мобильное приложение для редактирования фотографий</h1>
       <section class="features">
         <h2 class="visually-hidden">Преимущества приложения</h2>
-        <p class="features__slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan">Нам есть, что вам предложить!</p>
+        <div class="features__background-cover">
+          <p class="features__slogan">Устали от серости мегаполиса?</p>
+          <p class="features__slogan">Нам есть, что вам предложить!</p>
+        </div>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
@@ -92,14 +95,15 @@
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="reviews-wrapper slider">
           <ul class="reviews-list slider__list">
-            <li class="reviews__item slider__item">
+            <li class="reviews-list__item slider__item">
+              <p class="reviews-list__name">Николай Петров</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reviews__item slider__item">
+            <li class="reviews-list__item slider__item">
               <p class="reviews__text">Какой-то текст</p>
             </li>
-            <li class="reviews__item slider__item">
-              <p class="reviews__text">Какой-то текст</p>
+            <li class="reviews-list__item slider__item">
+              <p class="reviews-list__text">Какой-то текст</p>
             </li>
           </ul>
           <div class="reviews__toggles slider__toggles">
@@ -114,30 +118,30 @@
         <table class="rate__table table">
           <tr>
             <th class="visually-hidden">Тариф</th>
-            <td>База</td>
-            <td>Стандарт</td>
-            <td>Анлим</td>
+            <td class="table__name-price">База</td>
+            <td class="table__name-price">Стандарт</td>
+            <td class="table__name-price">Анлим</td>
           </tr>
           <tr>
             <th class="visually-hidden">Цена</th>
-            <td>1,99 USD</td>
-            <td>3,99 USD</td>
-            <td>9,99 USD</td>
+            <td class="table__price">1,99 USD</td>
+            <td class="table__price">3,99 USD</td>
+            <td class="table__price">9,99 USD</td>
           </tr>
           <tr>
-            <th>Розовый фильтр</th>
+            <th class="table__head">Розовый фильтр</th>
             <td class="table__feature table__feature--yes"><span class="visually-hidden">да</span></td>
             <td class="table__feature table__feature--yes"><span class="visually-hidden">да</span></td>
             <td class="table__feature table__feature--yes"><span class="visually-hidden">да</span></td>
           </tr>
           <tr>
-            <th>Cмайлики</th>
+            <th class="table__head">Cмайлики</th>
             <td class="table__feature table__feature--no"><span class="visually-hidden">нет</span></td>
             <td class="table__feature table__feature--yes"><span class="visually-hidden">да</span></td>
             <td class="table__feature table__feature--yes"><span class="visually-hidden">да</span></td>
           </tr>
           <tr>
-            <th>Комментарии</th>
+            <th class="table__head">Комментарии</th>
             <td class="table__feature table__feature--no"><span class="visually-hidden">нет</span></td>
             <td class="table__feature table__feature--no"><span class="visually-hidden">нет</span></td>
             <td class="table__feature table__feature--yes"><span class="visually-hidden">да</span></td>
@@ -156,9 +160,11 @@
         <address>
           <p class="contacts__invite">Остались вопросы?
           Свяжитесь с нами!</p>
-          <p class="contacts__phone-title">Звоните:</p>
+          <p class="contacts__title">Звоните:</p>
           <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          <p class="contacts__address-title">Приезжайте в гости:</p>
+          <p class="contacts__title">Пишите</p>
+          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="contacts__title">Приезжайте в гости:</p>
           <p class="contacts__addres">ул. Большая Конюшенная, 19/8</p>
         </address>
         <iframe src="#" aria-label="Расположение на карте"></iframe>
@@ -181,7 +187,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
 
