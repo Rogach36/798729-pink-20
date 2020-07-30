@@ -3,3 +3,27 @@
   margin: 0;
   padding: 0;
 }
+
+.site-list__item a {
+  display: block;
+  &:hover {
+    color: @pink;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.site-list__item--current {
+  position: relative;
+}
+
+.site-list__item--current::after {
+  content: "";
+  position: absolute;
+  background-color: @white;
+  left: 0;
+  top: 28px;
+  width: 86px; /* после появления размеров у пунктов меню здесь 100%*/
+  height: 2px;
+}
