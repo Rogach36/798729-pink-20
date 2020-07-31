@@ -36,6 +36,13 @@
 
 .form__field-message {
   font-family: "Open Sans", "Arial", sans-serif;
+  display: block;
+  width: 276px;
+  padding: 22px 25px 132px 20px;
+  border: 2px solid #e5e5e5;
+  outline: none;
+  resize: none;
+  overflow: hidden;
 }
 
 .form__note {
@@ -50,7 +57,7 @@
   margin-left: 35px;
 }
 
-.form__checklist-input+.form__checklist-label::before {
+.form__checklist-input + .form__checklist-label::before {
   content: "";
   position: absolute;
   width: 35px;
@@ -61,23 +68,23 @@
   border-radius: 1px;
 }
 
-.form__checklist-input:checked+.form__checklist-label::after {
+.form__checklist-input:checked + .form__checklist-label::after {
   content: "";
   position: absolute;
   width: 22px;
   height: 16px;
-  background-image: url(../img/tick-icon.svg);
+  background-image: url("../img/tick-icon.svg");
   background-repeat: no-repeat;
   left: -35px;
   top: 8px;
 }
 
-.form__checklist-input+.form__checklist-label:hover::before {
+.form__checklist-input + .form__checklist-label:hover::before {
   content: "";
   border: 2px solid @text-page;
- }
+}
 
-.form__checklist-input+.form__checklist-label:active::before {
+.form__checklist-input + .form__checklist-label:active::before {
   content: "";
   border: 2px solid #d22856;
 }
@@ -89,7 +96,7 @@
   margin-left: 35px;
 }
 
-.form__app-input+.form__app-label::before {
+.form__app-input + .form__app-label::before {
   content: "";
   position: absolute;
   width: 37px;
@@ -101,23 +108,23 @@
   top: -7px;
 }
 
-.form__app-input+.form__app-label::after {
+.form__app-input + .form__app-label::after {
   content: "";
   position: absolute;
   width: 22px;
   height: 16px;
-  background-image: url(../img/circle-radio-icon.svg);
+  background-image: url("../img/circle-radio-icon.svg");
   background-repeat: no-repeat;
   left: -32px;
   top: 6px;
 }
 
-.form__app-input+.form__app-label:hover::before {
+.form__app-input + .form__app-label:hover::before {
   content: "";
   border: 2px solid @text-page;
- }
+}
 
- .form__app-input+.form__app-label:active::before {
+.form__app-input + .form__app-label:active::before {
   content: "";
   border: 2px solid #d22856;
 }
@@ -133,20 +140,12 @@
   border: none;
   outline: none;
   cursor: pointer;
+
   &:hover {
     background-color: #1c9b5e;
   }
-  &:active {
-    color:rgba(255, 255, 255, 0.3);;
-  }
-}
 
-.form__field-message {
-  display: block;
-  width: 276px;
-  padding: 22px 25px 132px 20px;
-  border: 2px solid #e5e5e5;
-  outline: none;
-  resize: none;
-  overflow: hidden;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
