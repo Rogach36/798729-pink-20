@@ -1,8 +1,11 @@
 .table__name-price {
+  position: relative;
   color: @white;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  border-bottom: 0;
+  background-color: #283645;
   text-transform: uppercase;
 }
 
@@ -15,4 +18,60 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  border-top: 0;
+  background-color: #283645;
+  color: #ffffff;
+}
+
+
+.table {
+  max-width: 100%;
+  border-collapse: collapse;
+
+  text-align: center;
+}
+
+td,
+.table__head {
+  width: 152px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.table__feature--yes {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.table__feature--no {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.table__name-price--hit::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 0;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.table__name-price--hit::after {
+  content: "Хит";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: -7px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  text-transform: uppercase;
 }
