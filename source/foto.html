@@ -7,32 +7,35 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <!--обертка для позиционирования меню-->
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
-        </ul>
-      </div>
-    </nav>
-    <h1 class="page-header__title">Фотографии пользователей</h1>
+    <div class="container">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <!--обертка для позиционирования меню-->
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
+            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
+    </div>
   </header>
   <main class="page-main">
     <section class="users-photo">
       <h2 class="visually-hidden">Образцы и редактор фото</h2>
-      <p class="users-photo__appeal">Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="users-photo__appeal container">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</p>
       <ul class="users-photo__list photo-catalogue">
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img class="photo-catalogue__img-marker" src="../img/panorama-mobile@1x.jpg" alt="Фото пользователя">
@@ -45,8 +48,10 @@
             <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 215</p>
           </div>
+        </div>
         </li>
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img src="../img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
@@ -56,8 +61,10 @@
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 356</p>
           </div>
+          </div>
         </li>
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img src="../img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
@@ -67,8 +74,10 @@
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 666</p>
           </div>
+          </div>
         </li>
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img src="../img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
@@ -78,8 +87,10 @@
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 215</p>
           </div>
+          </div>
         </li>
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img src="../img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
@@ -89,8 +100,10 @@
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 4</p>
           </div>
+          </div>
         </li>
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img src="../img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
@@ -100,8 +113,10 @@
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 150</p>
           </div>
+          </div>
         </li>
         <li class="photo-catalogue__item">
+          <div class="container">
           <div class="photo-catalogue__user-card">
             <a class="photo-catalogue__photo" href="#">
               <img src="../img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
@@ -111,10 +126,12 @@
             <button class="photo-catalogue__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
             <p class="photo-catalogue__reaction">Нравится: 2560</p>
           </div>
+          </div>
         </li>
       </ul>
     </section>
     <section class="editor">
+    <div class="container">
       <h2 class="visually-hidden">Редактор изображений</h2>
       <p class="editor__photo-call">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <div class="editor__pic">
@@ -134,9 +151,10 @@
         <button class="setting__submit-btn setting__submit-btn--publish" type="submit">Запостить</button>
         <button class="setting__submit-btn setting__submit-btn--cancel" type="submit">Отмена</button>
       </form>
+      </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__social social">
       <a class="page-footer__logo" href="#">
         <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Приложение Pink">
