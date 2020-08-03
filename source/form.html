@@ -127,6 +127,22 @@
           </fieldset>
           <button class="form__button" type="submit">Отправить форму</button>
           <p class="form__note">* — обязательные поля</p>
+          <section class="form-popup form-popup--fail">
+            <h2 class="form-popup__title visually-hidden">Отпрвка не состоялсь</h2>
+            <p class="form-popup__notice">Что-то пошло не так!</p>
+            <p class="form-popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <div class="wrapper-bg">
+              <button class="form__button form__button--close" type="button">Ок</button>
+            </div>
+          </section>
+          <section class="form-popup form-popup--success">
+            <h2 class="form-popup__title visually-hidden">Успешная отправка</h2>
+            <p class="form-popup__notice">Ваша заявка отправлена</p>
+            <p class="form-popup__description">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <div class="wrapper-bg">
+              <button class="form__button form__button--close" type="button">Закрыть окно</button>
+            </div>
+          </section>
         </form>
     </div>
     </section>
