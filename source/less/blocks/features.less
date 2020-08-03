@@ -1,3 +1,9 @@
+@media (min-width: @tablet-width) {
+  .features {
+
+  }
+}
+
 .features__slogan {
   font-style: normal;
   font-weight: 300;
@@ -13,6 +19,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+  }
 }
 
 .features__title {
@@ -24,4 +38,73 @@
 
 .features__background-cover {
   background-color: @white;
+}
+
+.features__research {
+
+}
+
+.features__effect {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.features__description {
+
+}
+
+.features__timer {
+  position: relative;
+  background-image: url("../img/icon-timer.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+
+  &::before {
+    content: "24";
+    position: absolute;
+    width: 110px;
+    height: 75px;
+    top: 140px;
+    left: 65px;
+    font-weight: bold;
+    color: @pink;
+    font-size: 96px;
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 57px;
+    left: 19px;
+  }
+}
+
+.features__link-know-more {
+  color: #d22856;
+  text-decoration: underline;
+}
+
+.features__research {
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+    }
+
+  @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+  @media (min-width: @desktop-width) {
+      display: block;
+    }
 }
