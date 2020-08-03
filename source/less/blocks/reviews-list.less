@@ -9,11 +9,45 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+
 }
 
+.reviews-list__profession {
+
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 
 .reviews-list__text {
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews {
@@ -22,5 +56,3 @@
     background-color: #f2f2f2;
   }
 }
-
-
