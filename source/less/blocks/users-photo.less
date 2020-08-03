@@ -5,3 +5,22 @@
 .users-photo__appeal {
   line-height: 30px;
 }
+
+.photo-catalogue__photo--marker {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    width: 130px;
+    height: 36px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: @pink;
+    color: @white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
