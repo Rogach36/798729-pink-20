@@ -25,12 +25,15 @@
 }
 
 .setting__submit-btn {
+  display: block;
   width: 280px;
   padding: 21px 90px;
+  text-align: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   color: @pink;
+  align-items: center;
   border-radius: 30px;
   outline: none;
 }
@@ -46,6 +49,10 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
 
 .setting__submit-btn--cancel {
@@ -60,5 +67,9 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
   }
 }
