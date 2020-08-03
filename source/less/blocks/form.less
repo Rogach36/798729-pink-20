@@ -1,5 +1,48 @@
 .form__fieldset {
-  border: none;
+  border: transparent;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid #e5e5e5;
+  }
+
+}
+
+.form__fieldset--not {
+  border: transparent;
+}
+
+.form__legend {
+  color: @pink;
+  text-transform: uppercase;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.form__legend--not {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    color: @pink;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    color: @pink;
+    text-transform: uppercase;
+  }
 }
 
 .form__input {
