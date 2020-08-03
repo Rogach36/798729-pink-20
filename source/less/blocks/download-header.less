@@ -2,6 +2,15 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .download-header__btn {
@@ -23,8 +32,26 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    font-size: 21px;
+  }
 }
 
 .download-header__info {
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+
 }
