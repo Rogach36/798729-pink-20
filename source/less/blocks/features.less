@@ -17,24 +17,50 @@
   }
 }
 
+.features__slogan--long {
+  @media (min-width: @tablet-width) {
+    width: 590px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
+.features__slogan--short {
+  @media (min-width: @tablet-width) {
+    width: 335px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+}
+
 .features__list {
   background-color: @grey-bg;
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: center 543px;
+  background-position: center 110%;
   background-repeat: no-repeat;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 64px;
-  padding-top: 40px;
+  /* padding-top: 75px; */
 
   @media (min-width: @tablet-width) {
-    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: left top;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
     background-position: left center, center center, right center;
+  }
+}
+
+.features__item {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 310px;
+    left: 280px;
   }
 }
 
@@ -44,27 +70,35 @@
   line-height: 24px;
   color: #000000;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+    margin-top: 45px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    margin-bottom: 27px;
   }
 }
 
 .features__description {
-  margin-top: 40px;
-
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 46px;
+    margin-top: 0;
   }
 }
 
 .features__description--last {
-  padding-bottom: 323px;
-}
+  @media (min-width: @mobile-width-only) {
+    padding-bottom: 323px;
+  }
 
-.features__background-cover {
-  background-color: @white;
+  @media (min-width: @tablet-width) {
+   padding-bottom: 49px;
+  }
 }
 
 .features__effect {
