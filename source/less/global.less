@@ -12,21 +12,31 @@
 }
 
 .container {
-  max-width: 280px;
+  width: 280px; /* 320 */
   padding: 0 20px;
   margin: 0 auto;
+
+  &--nav {
+    padding: 0;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .container {
     width: 100%;
-    max-width: 620px;
+    max-width: 620px; /* 660 */
+
+    &--nav {
+      padding: 0;
+      max-width: 660px; /* 960 */
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .container {
-    max-width: 960px;
+    max-width: 940px;
     padding: 0 10px;
   }
 }
