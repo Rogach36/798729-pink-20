@@ -1,3 +1,42 @@
+.copyright {
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 115px -5px;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("../img/logo-htmlacademy-grey1.svg");
+    background-repeat: no-repeat;
+    background-position: 115px -5px;
+  }
+
+  &:active {
+    background-image: url("../img/logo-htmlacademy-grey2.svg");
+    background-repeat: no-repeat;
+    background-position: 115px -5px;
+  }
+}
+
 .copyright__text {
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 88px;
+    margin-right: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 123px;
+    margin-right: 15px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
 }

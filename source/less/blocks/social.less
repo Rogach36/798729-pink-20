@@ -1,7 +1,50 @@
+.social {
+  margin-top: 40px;
+  background-color: green; /* временный фон, убрать */
+
+  @media (min-width: @mobile-width-only) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 35px;
+  }
+}
+
+.footer-wrapper {
+  background-color: yellow; /* временный фон, убрать */
+
+  @media (min-width: @mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
 .social__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  background-color: red; /* временный фон, убрать */
+  justify-content: space-between;
+
+  @media (min-width: @mobile-width-only) {
+    width: 175px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
+  }
 }
 
 .social__link {
