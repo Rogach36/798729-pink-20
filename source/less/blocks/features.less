@@ -190,9 +190,17 @@
   background-image: url("../img/icon-timer.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
   vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    width: 238px;
+    height: 238px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 300px;
+  }
 
 
   &::before {
