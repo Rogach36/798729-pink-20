@@ -29,11 +29,30 @@
   background-image: url("../img/panorama-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    min-height: 509px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 506px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+  }
 }
 
 .photo-catalogue__item {
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px
+  }
 }
 
 .photo-catalogue__user-name,
