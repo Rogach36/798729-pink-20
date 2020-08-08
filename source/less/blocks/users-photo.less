@@ -4,6 +4,58 @@
 
 .users-photo__appeal {
   line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  width: 245px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+    width: 440px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 575px;
+    margin-bottom: 87px;
+  }
+}
+
+.panorama-wrapper {
+  width: 100%;
+  min-height: 137px;
+  margin: 0 auto;
+  margin-bottom: -14px;
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.photo-catalogue__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photo-catalogue__user-name,
+.photo-catalogue__user-comment {
+  margin-left: 17px;
+}
+
+.photo-catalogue__inter {
+  display: flex;
+  width: 145px;
+}
+
+.photo-catalogue__like-btn {
+  display: block;
+  width: 13px;
+  margin-left: 17px;
+  margin-right: 12px;
+  margin-top: 18px;
+}
+
+.photo-catalogue__reaction {
+  width: 105px;
 }
 
 .photo-catalogue__photo--marker {
@@ -22,5 +74,7 @@
     color: @white;
     text-transform: uppercase;
     text-align: center;
+    right: 20px;
+    top: o;
   }
 }
