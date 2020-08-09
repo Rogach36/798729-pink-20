@@ -11,7 +11,17 @@
 
 .table__head {
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    text-transform: capitalize;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .table__price {

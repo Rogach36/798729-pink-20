@@ -9,9 +9,47 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
+.reviews {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+}
 
 .reviews-list__text {
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews-list__profession {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

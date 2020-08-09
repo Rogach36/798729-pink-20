@@ -1,18 +1,99 @@
+.download-header {
+  position: relative;
+
+  @media (min-width: @mobile-width-only) {
+    /* background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-position: 0 97px;
+    background-repeat: no-repeat; */
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 258px;
+      height: 286px;
+      top: 97px;
+      left: -20px;
+      background-image: url("../img/iphone-hand-mobile@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 470px;
+      height: 545px;
+      bottom: 0;
+      right: -20px;
+      top: auto;
+      left: auto;
+      background-image: url("../img/iphone-hand-tabletM1x.png");
+      background-position: 0 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 592px;
+      height: 645px;
+      top: -6px;
+      right: 0;
+      background-image: url("../img/iphone-hand-desktopM1x.png");
+      background-position: 0 0;
+    }
+  }
+}
+
 .download-header__slogan {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  width: 300px;
+  margin-bottom: 350px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    width: 200px;
+    margin-bottom: 36px;
+    margin-left: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 215px;
+    margin-bottom: 45px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .download-header__btn {
+  display: block;
   width: 280px;
-  padding: 21px 38px;
+  padding-top: 20px;
+  padding-bottom: 19px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  margin-bottom: 20px;
+  color: @white;
   border: 3px solid #ffffff;
   border-radius: 30px;
   outline: none;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 
   &:hover {
     background-color: #ffffff;
@@ -22,8 +103,36 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    font-size: 21px;
+  }
 }
 
 .download-header__info {
   font-weight: 300;
+  width: 280px;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 130px;
+    padding-bottom: 0;
+  }
 }

@@ -4,4 +4,137 @@
 
 .users-photo__appeal {
   line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  width: 245px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+    width: 440px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 575px;
+    margin-bottom: 87px;
+  }
+}
+
+.panorama-wrapper {
+  width: 100%;
+  min-height: 137px;
+  margin: 0 auto;
+  margin-bottom: -14px;
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    min-height: 509px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 506px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+  }
+}
+
+.user-photo__panorama-caption {
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.container--grid {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    width: 620px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 54px;
+  }
+}
+
+.photo-catalogue__user-card {
+  width: 280px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+/* .photo-catalogue__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+} */
+
+.photo-catalogue__user-name,
+.photo-catalogue__user-comment {
+  margin-left: 17px;
+}
+
+.photo-catalogue__inter {
+  display: flex;
+  width: 145px;
+}
+
+.photo-catalogue__like-btn {
+  display: block;
+  width: 13px;
+  margin-left: 17px;
+  margin-right: 12px;
+  margin-top: 18px;
+}
+
+.photo-catalogue__reaction {
+  width: 105px;
+}
+
+.photo-catalogue__photo--marker {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    width: 130px;
+    height: 36px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: @pink;
+    color: @white;
+    text-transform: uppercase;
+    text-align: center;
+    right: 20px;
+    top: o;
+  }
 }
