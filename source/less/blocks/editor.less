@@ -5,16 +5,40 @@
 .editor__photo-call {
   background-color: @white;
   line-height: 30px;
+  padding-bottom: 70px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.editor__pic {
+  padding-top: 25px;
 }
 
 .editor__slogan-do-it {
   line-height: 30px;
+  width: 270px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    width: 425px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+  }
+}
+
+.editor__panel-wrapper {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
   }
 }

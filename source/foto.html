@@ -150,25 +150,27 @@
       <h2 class="visually-hidden">Редактор изображений</h2>
       <div class="editor__photo-call">
         <div class="container">
-          <p class="editor__slogan-do-it">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <p class="editor__slogan-do-it">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </div>
     </div>
-      <div class="container">
+      <div class="container editor__panel-wrapper">
         <div class="editor__pic">
           <a class="editor__photo-change" href="#">
             <img src="../img/photo-road-mobile@1x.jpg" alt="Фото для редактирования">
           </a>
         </div>
         <form class="editor__panel setting" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="setting__list">
-            <li><button class="setting__btn setting__btn--crop setting__btn--active" aria-label="Кнопка обрезки фото"></button></li>
-            <li><button class="setting__btn setting__btn--fill" aria-label="Кнопка заливки"></button></li>
-            <li><button class="setting__btn setting__btn--light" aria-label="Кнопка коррекции освещения"></button></li>
-          </ul>
-          <input class="setting__range" type="range">
-          <input class="setting__range" type="range">
-          <input class="setting__range" type="range">
+          <div class="setting__wrapper">
+            <ul class="setting__list">
+              <li><button class="setting__btn setting__btn--crop setting__btn--active" aria-label="Кнопка обрезки фото"></button></li>
+              <li><button class="setting__btn setting__btn--fill" aria-label="Кнопка заливки"></button></li>
+              <li><button class="setting__btn setting__btn--light" aria-label="Кнопка коррекции освещения"></button></li>
+            </ul>
+            <input class="setting__range" type="range">
+            <input class="setting__range" type="range">
+            <input class="setting__range" type="range">
+          </div>
           <button class="setting__submit-btn setting__submit-btn--publish" type="submit">Запостить</button>
           <button class="setting__submit-btn setting__submit-btn--cancel" type="submit">Отмена</button>
         </form>
