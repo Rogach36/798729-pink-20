@@ -1,11 +1,44 @@
 .user-info__share {
   line-height: 30px;
+  width: 273px;
+  text-align: center;
+  margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    width: 493px;
+    margin: 0 auto;
+    margin-bottom: 75px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    margin-bottom: 90px;
+  }
+}
+
+.user-info__share-slogan {
+   @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.user-info__form--wrapper {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 940px;
   }
 }
