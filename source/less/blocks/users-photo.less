@@ -22,7 +22,35 @@
   }
 }
 
-.panorama-wrapper {
+.photo-catalogue__photo-pan {
+ /*  display: block; */
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo-catalogue__photo--marker {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    width: 130px;
+    height: 36px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: @pink;
+    color: @white;
+    text-transform: uppercase;
+    text-align: center;
+    right: 20px;
+    margin-top: 15px;
+  }
+}
+
+
+/* .panorama-wrapper {
   width: 100%;
   min-height: 137px;
   margin: 0 auto;
@@ -40,7 +68,7 @@
     min-height: 506px;
     background-image: url("../img/panorama-desktop@1x.jpg");
   }
-}
+} */
 
 .user-photo__panorama-caption {
   width: 280px;
@@ -117,25 +145,4 @@
 
 .photo-catalogue__reaction {
   width: 105px;
-}
-
-.photo-catalogue__photo--marker {
-  position: relative;
-
-  &::before {
-    content: "Панорама дня";
-    position: absolute;
-    width: 130px;
-    height: 36px;
-    padding-top: 5px;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 12px;
-    background-color: @pink;
-    color: @white;
-    text-transform: uppercase;
-    text-align: center;
-    right: 20px;
-    top: o;
-  }
 }
