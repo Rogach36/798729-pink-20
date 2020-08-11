@@ -23,13 +23,67 @@
 }
 
 .photo-catalogue__photo-pan {
- /*  display: block; */
   width: 100%;
   object-fit: cover;
 }
 
-.photo-catalogue__photo--marker {
+.panorama-wrapper {
   position: relative;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    padding: 0 10px;
+  }
+}
+
+.panorama-wrapper__text {
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 36px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: @pink;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  right: 20px;
+
+
+  @media (min-width: @tablet-width) {
+    top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 10px;
+  }
+}
+
+/* .panorama-wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    padding: 0 10px;
+  }
 
   &::before {
     content: "Панорама дня";
@@ -44,10 +98,10 @@
     color: @white;
     text-transform: uppercase;
     text-align: center;
-    right: 20px;
-    margin-top: 15px;
+    right: 10px;
+    margin-top: 55px;
   }
-}
+} */
 
 
 /* .panorama-wrapper {
