@@ -4,9 +4,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    .container {
-      max-width: 660px;
-    }
+    max-width: 660px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,8 +21,10 @@
 
 .main-nav__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+  width: 100%;
+  list-style: none;
 
   @media (min-width: @desktop-width) {
     display: flex;
