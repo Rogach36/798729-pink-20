@@ -1,5 +1,6 @@
 .users-photo {
   background-color: @white;
+  margin-bottom: 20px;
 }
 
 .users-photo__appeal {
@@ -21,7 +22,89 @@
   }
 }
 
+.photo-catalogue__photo-pan {
+  width: 100%;
+  object-fit: cover;
+}
+
 .panorama-wrapper {
+  position: relative;
+  width: 320px;
+  /* padding: 0 20px; */
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    /* padding: 0 10px; */
+  }
+}
+
+.panorama-wrapper__text {
+  position: absolute;
+  display: block;
+  width: 130px;
+  height: 36px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: @pink;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  right: 20px;
+
+
+  @media (min-width: @tablet-width) {
+    top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 10px;
+  }
+}
+
+/* .panorama-wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    padding: 0 10px;
+  }
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    width: 130px;
+    height: 36px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: @pink;
+    color: @white;
+    text-transform: uppercase;
+    text-align: center;
+    right: 10px;
+    margin-top: 55px;
+  }
+} */
+
+
+/* .panorama-wrapper {
   width: 100%;
   min-height: 137px;
   margin: 0 auto;
@@ -39,7 +122,7 @@
     min-height: 506px;
     background-image: url("../img/panorama-desktop@1x.jpg");
   }
-}
+} */
 
 .user-photo__panorama-caption {
   width: 280px;
@@ -116,25 +199,4 @@
 
 .photo-catalogue__reaction {
   width: 105px;
-}
-
-.photo-catalogue__photo--marker {
-  position: relative;
-
-  &::before {
-    content: "Панорама дня";
-    position: absolute;
-    width: 130px;
-    height: 36px;
-    padding-top: 5px;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 12px;
-    background-color: @pink;
-    color: @white;
-    text-transform: uppercase;
-    text-align: center;
-    right: 20px;
-    top: o;
-  }
 }
