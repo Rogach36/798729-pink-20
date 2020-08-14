@@ -29,8 +29,8 @@
     position: absolute;
     top: 24px;
     left: -18px;
-    width: 36px;
-    height: 2px;
+    width: 29px;
+    height: 3px;
     background-color: #ffffff;
   }
 
@@ -43,9 +43,14 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: @pink;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: rgba(210, 40, 86, 0.3);;
   }
 
   @media (min-width: @desktop-width) {
