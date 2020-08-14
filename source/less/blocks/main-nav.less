@@ -14,6 +14,45 @@
   }
 }
 
+.main-nav__button-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -18px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .main-nav {
   font-weight: bold;
   font-size: 18px;
@@ -50,9 +89,6 @@
   }
 }
 
-.main-nav__toggle {
-  display: none;
-}
 //для десктопа
 // .site-list__item--current {
 //   position: relative;
