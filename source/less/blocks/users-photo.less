@@ -125,25 +125,22 @@
 } */
 
 .user-photo__panorama-caption {
-  width: 280px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 620px;
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
+    width: 960px;
   }
 }
 
 .container--grid {
   @media (min-width: @tablet-width) {
     display: grid;
-    width: 620px;
+    /* width: 620px; */
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
@@ -156,12 +153,11 @@
 }
 
 .photo-catalogue__user-card {
-  max-width: 280px;
   background-color: #f2f2f2;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    max-width: 300px;
+    width: 100%;
   }
 }
 
