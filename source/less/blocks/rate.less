@@ -1,7 +1,47 @@
 .rate {
   background-color: #e5e5e5;
+
+  @media (min-width: @mobile-width-only) {
+    min-height: 479px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: auto;
+  }
 }
 
 .rate__toggles {
   text-align: center;
 }
+
+/* стили для мобильной таблицы */
+ .rate__table {
+  position: relative;
+}
+
+.table__head {
+  position: absolute;
+  min-width: 280px;
+  height: 59px;
+}
+
+.table__head-filter {
+  top: 96px;
+  left: 48px;
+}
+
+.table__head-smile {
+  top: 159px;
+  left: 48px;
+}
+
+.table__head-comment {
+  top: 222px;
+  left: 48px;
+}
+
+.table__name-price--hit {
+  min-height: 96px;
+}
+
+/* стили для мобильной таблицы */
