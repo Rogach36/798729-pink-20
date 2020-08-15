@@ -2,7 +2,8 @@
   background-color: #e5e5e5;
 
   @media (min-width: @mobile-width-only) {
-    min-height: 479px;
+    min-height: 379px;
+    padding-top: 100px;
   }
 
   @media (min-width: @tablet-width) {
@@ -11,7 +12,16 @@
 }
 
 .rate__toggles {
-  text-align: center;
+  @media (min-width: @mobile-width-only) {
+    position: relative;
+    top: 213px;
+    left: 112px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    text-align: center;
+  }
 }
 
 /* стили для мобильной таблицы */
@@ -20,28 +30,50 @@
 }
 
 .table__head {
+  box-sizing: border-box;
   position: absolute;
-  min-width: 280px;
-  height: 59px;
+  min-width: 285px;
+  height: 69px;
+  padding-top: 16px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .table__head-filter {
   top: 96px;
-  left: 48px;
+  left: -2px;
+  background-image: url(../img/icon-yes.svg);
+  background-repeat: no-repeat;
+  background-position: 230px 18px;
 }
 
 .table__head-smile {
   top: 159px;
-  left: 48px;
+  left: -2px;
+  background-image: url(../img/icon-yes.svg);
+  background-repeat: no-repeat;
+  background-position: 230px 18px;
 }
 
 .table__head-comment {
-  top: 222px;
-  left: 48px;
+  top: 216px;
+  left: -2px;
+  background-image: url(../img/icon-no.svg);
+  background-repeat: no-repeat;
+  background-position: 230px 20px;
+}
+
+.table__name-price--not,
+.table__price--not {
+  display: none;
 }
 
 .table__name-price--hit {
   min-height: 96px;
+}
+
+.table__feature--not {
+  display: none;
 }
 
 /* стили для мобильной таблицы */
