@@ -66,6 +66,7 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: left top;
     padding-bottom: 2px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: @desktop-width) {
@@ -178,7 +179,10 @@
 }
 
 .features__timer-text {
-  margin-left: 70px;
+  @media (min-width: @tablet-width) {
+    margin-top: 13px;
+    padding-left: 27px;
+  }
 }
 
 .features__effect {
@@ -188,7 +192,9 @@
   line-height: 36px;
 
   @media (min-width: @tablet-width) {
-    width: 175px;
+    width: 170px;
+    padding-left: 2px;
+    margin-bottom: -5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -197,14 +203,29 @@
   }
 }
 
+.move-word-2 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    width: 125px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .features__description-effect {
   @media (min-width: @tablet-width) {
     width: 300px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -214,11 +235,13 @@
 
   @media (min-width: @tablet-width) {
     width: 230px;
+    margin-left: 4px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin-left: 0;
   }
 }
 
@@ -244,17 +267,17 @@
     content: "24";
     position: absolute;
     display: inline-block;
-    width: 155px;
-    height: 155px;
+    width: 166px;
+    height: 166px;
     border-radius: 50%;
-    border: 17px solid @pink;
-    top: 60px;
-    left: 25px;
+    border: 18px solid @pink;
+    top: 56px;
+    left: 15px;
     font-weight: bold;
     color: @pink;
     font-size: 96px;
     text-align: center;
-    line-height: 145px;
+    line-height: 160px;
   }
 }
 
