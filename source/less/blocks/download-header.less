@@ -13,16 +13,17 @@
       display: block;
       width: 258px;
       height: 286px;
-      top: 97px;
+      top: 85px;
       left: -20px;
       background-image: url("../img/iphone-hand-mobile@1x.png");
-      background-position: 0 -12px;
+      background-position: 0 0;
       background-repeat: no-repeat;
     }
   }
 
   @media (min-width: @tablet-width) {
     background-image: none;
+    min-height: 525px;
 
     &::before {
       position: absolute;
@@ -30,12 +31,10 @@
       display: block;
       width: 470px;
       height: 545px;
-      bottom: 0;
-      right: -20px;
-      top: auto;
-      left: auto;
       background-image: url("../img/iphone-hand-tabletM1x.png");
-      background-position: 0 0;
+      background-position: center center;
+      left: 147px;
+      top: -20px;
     }
   }
 
@@ -67,8 +66,9 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     width: 200px;
-    margin-bottom: 36px;
-    margin-left: 58px;
+    margin-bottom: 29px;
+    margin-top: -32px;
+    margin-left: 49px;
   }
 
   @media (min-width: @desktop-width) {
@@ -81,7 +81,7 @@
 
 .download-header__btn {
   display: block;
-  width: 275px;
+  width: 278px;
   padding-top: 17px;
   padding-bottom: 17px;
   font-weight: bold;
@@ -94,7 +94,8 @@
   outline: none;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 6;
+  box-sizing: border-box;
 
   &:hover {
     background-color: #ffffff;
@@ -106,7 +107,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 300px;
+    width: 297px;
     margin-bottom: 51px;
   }
 
@@ -119,19 +120,21 @@
 .download-header__info {
   font-weight: 300;
   width: 280px;
-  position: relative;
-  z-index: 2;
   padding-bottom: 31px;
   margin-bottom: -7px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 6;
     font-size: 18px;
     width: 300px;
     margin-bottom: 119px;
+    left: -2px;
   }
 
   @media (min-width: @desktop-width) {
+    position: static;
     font-size: 18px;
     width: 300px;
     margin-bottom: 130px;
