@@ -1,3 +1,9 @@
+.slider__list {
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+}
+
 .slider__toggles {
   text-align: center;
   margin-bottom: 35px;
@@ -17,6 +23,10 @@
 
   &:active {
     background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
   }
 }
 
@@ -54,10 +64,4 @@
 .slider-table__toggle--current:active {
   background-color: @white;
   border: 3px solid @text-page;
-}
-
-.slider__list {
-  @media (min-width: @tablet-width) {
-    background-color: #f2f2f2;
-  }
 }
