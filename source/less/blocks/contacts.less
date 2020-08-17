@@ -4,7 +4,7 @@
   height: 200px;
 
   @media (min-width: @tablet-width) {
-    height: 520px;
+    height: 377px;
   }
 }
 
@@ -32,6 +32,8 @@
     font-size: 40px;
     line-height: 54px;
     margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,7 +67,7 @@
 .contacts__write-us {
   margin-bottom: 25px;
 
-    @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     order: 2;
   }
 
@@ -92,14 +94,34 @@
   font-size: 18px;
   line-height: 25px;
   font-style: normal;
-  margin-bottom: -4px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__title--phone {
+  @media (min-width: @tablet-width) {
+    padding-right: 6px;
+    padding-top: 2px;
+
+  }
+}
+
+.contacts__title--wright {
+  @media (min-width: @tablet-width) {
+    padding-left: 31px;
+    margin-bottom: 4px;
+  }
 }
 
 .contacts__title--location {
   margin-bottom: -23px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: -21px;
+    margin-top: 24px;
+    padding-right: 4px;
   }
 }
 
@@ -111,6 +133,13 @@
   font-size: 24px;
   line-height: 33px;
   color: @pink;
+}
+
+.contacts__mail {
+  @media (min-width: @tablet-width) {
+    padding-left: 35px;
+    margin-bottom: 41px;
+  }
 }
 
 .contacts__mail:hover {
@@ -145,6 +174,10 @@
     height: 50px;
     transform: scale(-1, 1);
     right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
 

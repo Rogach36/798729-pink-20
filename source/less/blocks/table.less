@@ -51,24 +51,9 @@
     line-height: 20px;
     padding-bottom: 28px;
   }
-  /*
-  @media (min-width: @tablet-width) {
-    position: static;
-  } */
-}
-
-.table__head {
-  line-height: 30px;
-  font-weight: normal;
-  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    text-transform: capitalize;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
+    padding-bottom: 11px;
   }
 }
 
@@ -77,6 +62,25 @@ td,
   width: 152px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
+}
+
+.table__head {
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 138px;
+    text-transform: capitalize;
+    padding: 7px 0;
+    padding-left: 14px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .bg-grey {
@@ -96,7 +100,7 @@ td,
 }
 
 .table__name-price--hit {
-  min-width: 280px;
+  /* min-width: 280px; */
 }
 
 .table__name-price--hit::before {
