@@ -24,11 +24,13 @@
   @media (min-width: @tablet-width) {
     width: 590px;
     margin: 0 auto;
-    margin-left: 13px;
+    /* margin-left: 13px; */
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 70px;
+    margin-top: 64px;
+    width: 750px;
+    /* margin: 0 auto; */
   }
 }
 
@@ -40,12 +42,13 @@
     width: 335px;
     margin: 0 auto;
     margin-bottom: 36px;
-    padding-left: 12px;
+    /* padding-left: 12px; */
   }
 
   @media (min-width: @desktop-width) {
     width: 440px;
-    margin-top: 33px;
+    margin-top: 0;
+    margin-bottom: 55px;
   }
 }
 
@@ -86,9 +89,9 @@
   @media (min-width: @desktop-width) {
     width: 280px;
     margin: 0;
-    margin-top: 280px;
+    margin-top: 288px;
     margin-right: 50px;
-    padding-left: 30px;
+    padding-left: 6px/* 30px */;
     text-align: center;
   }
 }
@@ -112,7 +115,9 @@
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
+    margin-left: 18px /* 49px */;
+    text-align: center;
   }
 }
 
@@ -124,6 +129,16 @@
     padding-top: 0;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-left: 22px /* 30px */;
+  }
+}
+
+.features__title--last {
+  @media (min-width: @desktop-width) {
+    margin-left: 24px /* 47px */;
+    width: 231px;
+  }
 }
 
 .move-word {
@@ -148,10 +163,13 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 248px;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 46px;
     margin-top: 0;
+    padding-left: 11px;/*временно*/
+    text-align: center;
   }
 }
 
