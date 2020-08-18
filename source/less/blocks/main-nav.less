@@ -21,6 +21,11 @@
 }
 
 .main-nav {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+
   @media (min-width: @desktop-width) {
     display: flex;
   }
@@ -67,19 +72,12 @@
 
   &:active::before,
   &:active::after {
-    background-color: rgba(210, 40, 86, 0.3);;
+    background-color: rgba(210, 40, 86, 0.3);
   }
 
   @media (min-width: @desktop-width) {
     display: none;
   }
-}
-
-.main-nav {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
-  text-transform: uppercase;
 }
 
 .main-nav__list {
@@ -101,7 +99,6 @@
     padding: 0 10px;
     margin: 0 auto;
     box-sizing: border-box;
-
   }
 }
 
