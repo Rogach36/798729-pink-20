@@ -1,8 +1,57 @@
 .slider__list {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     background-color: @white;
   }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border: 2px solid rgba(40, 54, 69, 0.3);
+      border-right-color: transparent;
+      border-top-color: transparent;
+      top: 35px;
+      left: 6px;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border: 2px solid rgba(40, 54, 69, 0.3);
+      border-right-color: transparent;
+      border-top-color: transparent;
+      top: 35px;
+      right: 6px;
+      transform: rotate(225deg);
+    }
+  }
 }
+
+.slider {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 79px;
+      height: 64px;
+      top: -111px;
+      left: 431px;;
+      background-image: url(../img/icon-quotes.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
 
 .slider__toggles {
   text-align: center;

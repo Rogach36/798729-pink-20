@@ -11,6 +11,11 @@
   &:active {
     background-image: url("../img/logo-htmlacademy-grey2.svg");
   }
+
+  @media (min-width: @desktop-width) {
+    background-position: 128px 0;
+    width: 165px ;
+  }
 }
 
 .copyright__text {
@@ -25,6 +30,7 @@
   @media (min-width: @desktop-width) {
     width: 123px;
     margin-right: 15px;
+    font-size: 18px;
   }
 }
 
@@ -34,6 +40,10 @@
   height: 34px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-left: 25px;
   }
 }

@@ -46,7 +46,25 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 170px;
+    width: /* 170px */ 184px;
+    margin-right: 44px;
+  }
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 1px;
+
+    &:first-child {
+      margin-left: -7px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 }
 
