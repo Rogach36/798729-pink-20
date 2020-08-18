@@ -38,6 +38,31 @@
   }
 }
 
+.page-header--form {
+  min-height: 496px;
+  background-color: @menu-bg;
+  color: @white;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 259px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 740px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center 340px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 480px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    margin-bottom: 90px;
+  }
+}
+
 .page-header__logo {
   display: block;
   width: 78px;
@@ -61,29 +86,6 @@
     height: 110px;
     padding-top: 30px;
     margin-right: 173px;
-  }
-}
-
-.page-header--form {
-  min-height: 540px;
-  background-color: @menu-bg;
-  color: @white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 290px;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    min-height: 740px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 340px;
-    margin-bottom: 100px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 480px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center top;
-    margin-bottom: 90px;
   }
 }
 

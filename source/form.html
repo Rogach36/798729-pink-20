@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+ <!--  <style>
+    body {
+      opacity: 0.5;
+    }
+
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("img/MobileForm.jpg");
+    }
+
+    @media (min-width: 660px) {
+      HTML {
+        background-image: url("img/TabletForm.jpg");
+      }
+    }
+
+      @media (min-width: 960px) {
+        HTML {
+          background-image: url("img/DesktopForm.jpg");
+      }
+    }
+  </style> -->
 </head>
 <body class="page-body">
   <header class="page-header page-header--form">
@@ -40,9 +63,10 @@
         <p class="user-info__share">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="user-info__share-slogan">Пожалуйста, заполните форму ниже:</span>
         </p>
-
+      </div>
         <form class="user-info__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="user-info__form-wrapper">
+            <div class="container">
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--not">
               <p>
                 <label class="form__label" for="sername">Фамилия:</label>
@@ -57,6 +81,9 @@
                   <input class="form__input form__input--patroname" type="text" name="name" placeholder="Ну и отчество тоже" id="middlename">
                 </p>
             </fieldset><!-- имя -->
+          </div>
+            <div class="form__cover-grey">
+              <div class="container">
             <fieldset class="form__fieldset form__fieldset--bg-grey form__fieldset--adventure">
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__checklist">
@@ -98,6 +125,9 @@
                 </li>
               </ul>
             </fieldset><!-- чак норис -->
+          </div>
+          </div>
+          <div class="container">
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--contacts">
               <legend class="form__legend form__legend--not">Контактная информация</legend>
               <input class="form__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
@@ -105,6 +135,10 @@
               <input class="form__input" type="email" name="email" placeholder="Введите почту*" aria-label="Поле для email" id="email">
               <label class="form__label" for="email">Адрес почты</label>
             </fieldset><!-- контакты -->
+          </div>
+          </div>
+          <div class="form__cover-grey">
+            <div class="container">
             <fieldset class="form__fieldset form__fieldset--bg-grey form__fieldset--app">
                   <legend class="form__legend">С каким приложением путешествовали?</legend>
                   <ul class="form__app-list">
@@ -128,14 +162,19 @@
                     </li>
                     </ul>
             </fieldset><!-- приложение -->
+            </div>
+          </div>
+
+          <div class="container">
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--review">
-              <legend class="form__legend form__legend--not">Опишите свои эмоции</legend>
+              <legend class="form__legend">Опишите свои эмоции</legend>
               <textarea class="form__field-message" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле для сообщения" id="message"></textarea>
               <label class="form__label" for="message"></label>
             </fieldset><!-- отызв -->
-          </div>
+
           <button class="form__button" type="submit">Отправить форму</button>
           <p class="form__note">* — обязательные поля</p>
+        </div>
           <section class="form-popup form-popup--fail">
             <h2 class="form-popup__title visually-hidden">Отпрвка не состоялсь</h2>
             <p class="form-popup__notice">Что-то пошло не так!</p>
@@ -153,7 +192,7 @@
             </div>
           </section>
         </form>
-    </div>
+    <!-- </div> -->
     </section>
   </main>
   <footer class="page-footer">

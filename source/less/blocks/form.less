@@ -102,13 +102,24 @@
 .form__input {
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+
+  @media (max-width: 659px) {
+    box-sizing: border-box;
+    width: 279px;
+    padding: 15px 0;
+    margin-left: -12px;
+    margin-top: 3px;
+    padding-left: 21px;
+  }
 }
 
 .form__input--sername {
-  width: 278px;
+  /* width: 278px; */
+  margin-bottom: 4px;
 
   @media (min-width: @tablet-width) {
     width: 523px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -117,10 +128,12 @@
 }
 
 .form__input--name {
-  width: 278px;
+  /* width: 278px; */
+  margin-bottom: 4px;
 
   @media (min-width: @tablet-width) {
     width: 564px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -129,7 +142,7 @@
 }
 
 .form__input--patroname {
-  width: 278px;
+  /* width: 278px; */
 
   @media (min-width: @tablet-width) {
     width: 525px;
@@ -156,6 +169,11 @@
   }
 }
 
+.form__cover-grey {
+  width: 100%;
+  background-color: @grey-bg;
+}
+
 .form__app-list,
 .form__checklist {
   list-style: none;
@@ -167,6 +185,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @pink;
+
+  @media (max-width: 659px) {
+    margin-left: 12px;
+  }
 }
 
 .form__input,
