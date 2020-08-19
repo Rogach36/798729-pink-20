@@ -1,7 +1,7 @@
 .copyright {
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
-  background-position: 102px -6px;
+  background-position: 102px 0;
   cursor: pointer;
 
   &:hover {
@@ -10,6 +10,10 @@
 
   &:active {
     background-image: url("../img/logo-htmlacademy-grey2.svg");
+  }
+
+  @media (max-width: 659px) {
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,6 +25,7 @@
 .copyright__text {
   line-height: 18px;
   font-weight: normal;
+  margin-left: -1px;
 
   @media (min-width: @tablet-width) {
     width: 88px;

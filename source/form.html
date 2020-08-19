@@ -70,11 +70,11 @@
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--not">
               <p>
                 <label class="form__label" for="sername">Фамилия:</label>
-                <input class="form__input form__input--sername" type="text" name="sername" placeholder="Укажите фамилию*" id="sername">
+                <input class="form__input form__input--sername" type="text" name="sername" placeholder="Укажите фамилию *" id="sername">
               </p>
                 <p>
                   <label class="form__label" for="name">Имя:</label>
-                  <input class="form__input form__input--name" type="text" name="name" placeholder="Введите ваше имя*" id="name">
+                  <input class="form__input form__input--name" type="text" name="name" placeholder="Введите ваше имя *" id="name">
                 </p>
                 <p>
                   <label class="form__label" for="middlename">Отчество:</label>
@@ -93,31 +93,31 @@
                     <label class="form__checklist-label" for="selfie">Сделал селфи с акулой</label>
                   </p>
                 </li>
-                <li class="form__checklist__item">
+                <li class="form__checklist-item">
                   <p>
                     <input class="visually-hidden form__checklist-input" type="checkbox" name="beach" value="photo-burn" checked id="beach">
                     <label class="form__checklist-label" for="beach">Обгорел на пляже</label>
                   </p>
                 </li>
-                <li class="form__checklist__item">
+                <li class="form__checklist-item">
                   <p>
                     <input class="visually-hidden form__checklist-input" type="checkbox" name="selebrity" value="meeting" id="norris">
                     <label class="form__checklist-label" for="norris">Видел Чака Норриса</label>
                   </p>
                 </li>
-                <li class="form__checklist__item">
+                <li class="form__checklist-item">
                   <p>
                     <input class="visually-hidden form__checklist-input" type="checkbox" name="shoping" value="souvenir" id="buy">
                     <label class="form__checklist-label" for="buy">Накупил сувениров</label>
                     </p>
                 </li>
-                  <li class="form__checklist__item">
+                  <li class="form__checklist-item">
                   <p>
                     <input class="visually-hidden form__checklist-input" type="checkbox" name="pisa" value="tower" checked id="pisa">
                       <label class="form__checklist-label" for="pisa">Удержал башню</label>
                   </p>
                 </li>
-                <li class="form__checklist__item">
+                <li class="form__checklist-item">
                   <p>
                     <input class="visually-hidden form__checklist-input" type="checkbox" name="hotel" value="disorder" id="hotel">
                     <label class="form__checklist-label" for="hotel">Разгромил отель</label>
@@ -130,10 +130,14 @@
           <div class="container">
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--contacts">
               <legend class="form__legend form__legend--not">Контактная информация</legend>
-              <input class="form__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
-              <label class="form__label" for="phone">Номер телефона</label>
-              <input class="form__input" type="email" name="email" placeholder="Введите почту*" aria-label="Поле для email" id="email">
-              <label class="form__label" for="email">Адрес почты</label>
+              <div class="form__fieldset-cover form__fieldset-cover1">
+                <input class="form__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
+                <label class="form__label" for="phone">Номер телефона</label>
+              </div>
+              <div class="form__fieldset-cover">
+                <input class="form__input" type="email" name="email" placeholder="Введите почту *" aria-label="Поле для email" id="email">
+                <label class="form__label" for="email">Адрес почты</label>
+              </div>
             </fieldset><!-- контакты -->
           </div>
           </div>
@@ -173,20 +177,24 @@
             </fieldset><!-- отызв -->
 
           <button class="form__button" type="submit">Отправить форму</button>
-          <p class="form__note">* — обязательные поля</p>
+          <p class="form__note"><span class="form__star">*</span> — обязательные поля</p>
         </div>
           <section class="form-popup form-popup--fail">
-            <h2 class="form-popup__title visually-hidden">Отпрвка не состоялсь</h2>
-            <p class="form-popup__notice">Что-то пошло не так!</p>
-            <p class="form-popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <div class="wrapper-bg">
-              <button class="form__button form__button--close" type="button">Ок</button>
+            <div class="container">
+              <h2 class="form-popup__title visually-hidden">Отпрвка не состоялсь</h2>
+              <p class="form-popup__notice">Что-то пошло не так!</p>
+              <p class="form-popup__description form-popup__description--fail">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             </div>
+
+              <button class="form__button form__button--close" type="button">Ок</button>
+
           </section>
           <section class="form-popup form-popup--success">
-            <h2 class="form-popup__title visually-hidden">Успешная отправка</h2>
-            <p class="form-popup__notice">Ваша заявка отправлена</p>
-            <p class="form-popup__description">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <div class="container">
+              <h2 class="form-popup__title visually-hidden">Успешная отправка</h2>
+              <p class="form-popup__notice">Ваша заявка отправлена</p>
+              <p class="form-popup__description form-popup__description--good">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            </div>
             <div class="wrapper-bg">
               <button class="form__button form__button--close" type="button">Закрыть окно</button>
             </div>
