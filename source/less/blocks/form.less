@@ -9,9 +9,36 @@
   }
 
   @media (min-width: @desktop-width) {
-    border: 2px solid #e5e5e5;
+    /* border: 2px solid #e5e5e5; */
     /* width: 457px; */
   }
+}
+
+.form__fieldset p {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.form__wrapper-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__wrapper-application {
+  order: 1;
+}
+
+.form__wrapper-contact {
+  order: 2;
+}
+
+.form__wrapper-trip {
+  order: 3;
+}
+
+.form__wrapper-emotion {
+  order: 4;
 }
 
 .form__fieldset--not {
@@ -19,7 +46,7 @@
   margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
-    order: 1;
+    /* order: 1; */
     margin-bottom: 45px;
   }
 
@@ -31,7 +58,7 @@
 .form__fieldset--adventure {
   margin-bottom: 28px;
   @media (min-width: @tablet-width) {
-    order: 4;
+    /* order: 4; */
     margin-bottom: 45px;
   }
 
@@ -59,7 +86,7 @@
 .form__fieldset--contacts {
   margin-bottom: 33px;
   @media (min-width: @tablet-width) {
-    order: 3;
+    /* order: 3; */
     margin-bottom: 45px;
   }
 
@@ -72,14 +99,14 @@
 
 .form__fieldset--app {
   @media (min-width: @tablet-width) {
-    order: 2;
+    /* order: 2; */
     margin-bottom: 45px;
   }
 }
 
 .form__fieldset--review {
   @media (min-width: @tablet-width) {
-    order: 5;
+    /* order: 5; */
     margin-bottom: 70px;
   }
 
@@ -154,6 +181,12 @@
     margin-top: 3px;
     padding-left: 21px;
   }
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    padding: 15px 0;
+    padding-left: 21px;
+  }
 }
 
 .form__input--sername {
@@ -162,11 +195,12 @@
 
   @media (min-width: @tablet-width) {
     width: 523px;
-    margin-bottom: 0;
+    margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
     width: 339px;
+    margin-bottom: 0;
   }
 }
 
@@ -176,11 +210,12 @@
 
   @media (min-width: @tablet-width) {
     width: 564px;
-    margin-bottom: 0;
+    margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
     width: 373px;
+    margin-bottom: 0;
   }
 }
 
@@ -242,6 +277,12 @@
   @media (max-width: 659px) {
     margin-left: 12px;
   }
+}
+
+.form__label--name {
+  margin-left: -12px;
+  margin-right: 18px;
+  margin-top: 18px;
 }
 
 .form__field-message {
@@ -394,5 +435,3 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
-
-
