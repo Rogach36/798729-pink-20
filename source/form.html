@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-  <!-- <style>
+  <style>
     body {
       opacity: 0.5;
     }
@@ -18,7 +18,7 @@
 
     @media (min-width: 660px) {
       HTML {
-        background-image: url("img/TabletForm.jpg");
+        background-image: url("img/TabletFormPop.jpg");
       }
     }
 
@@ -27,7 +27,7 @@
           background-image: url("img/DesktopForm.jpg");
       }
     }
-  </style> -->
+  </style>
 </head>
 <body class="page-body">
   <header class="page-header page-header--form">
@@ -187,18 +187,16 @@
           <section class="form-popup form-popup--fail">
             <div class="container">
               <h2 class="form-popup__title visually-hidden">Отпрвка не состоялсь</h2>
-              <p class="form-popup__notice">Что-то пошло не так!</p>
+              <p class="form-popup__notice form-popup__notice-fail">Что-то пошло не так!</p>
               <p class="form-popup__description form-popup__description--fail">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             </div>
-
               <button class="form__button form__button--close" type="button">Ок</button>
-
           </section>
           <section class="form-popup form-popup--success">
             <div class="container">
               <h2 class="form-popup__title visually-hidden">Успешная отправка</h2>
-              <p class="form-popup__notice">Ваша заявка отправлена</p>
-              <p class="form-popup__description form-popup__description--good">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+              <p class="form-popup__notice form-popup__notice-good">Ваша заявка отправлена</p>
+              <p class="form-popup__description form-popup__description--good">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
             </div>
             <div class="wrapper-bg">
               <button class="form__button form__button--close" type="button">Закрыть окно</button>
