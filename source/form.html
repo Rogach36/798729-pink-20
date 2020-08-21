@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-  <style>
+   <style>
     body {
       opacity: 0.5;
     }
@@ -18,7 +18,7 @@
 
     @media (min-width: 660px) {
       HTML {
-        background-image: url("img/TabletFormPop.jpg");
+        background-image: url("img/TabletForm.jpg");
       }
     }
 
@@ -45,15 +45,12 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <div class="main-nav__wrapper">
-          <!--обертка для позиционирования меню-->
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a href="foto.html">Фотографии</a></li>
-            <li class="site-list__item"><a>Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="foto.html">Фотографии</a></li>
+          <li class="site-list__item"><a>Конкурс</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
+        </ul>
       </nav>
     </div>
     <div class="container">
@@ -65,12 +62,12 @@
       <div class="container">
         <h2 class="visually-hidden">Информация о пользователе</h2>
         <p class="user-info__share">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="user-info__share-slogan">Пожалуйста, заполните форму ниже:</span>
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!&nbsp;<span class="user-info__share-slogan">Пожалуйста, заполните форму ниже:</span>
         </p>
       </div>
       <form class="user-info__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="user-info__form-wrapper">
-          <div class="container">
+        <div class="user-info__form-wrapper container">
+          <div class="container form__wrapper-name">
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--not">
               <p>
                 <label class="form__label form__label--name" for="sername">Фамилия:</label>
@@ -135,14 +132,16 @@
             <div class="container form__wrapper-contact">
               <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--contacts">
                 <legend class="form__legend form__legend-contact form__legend--not">Контактная информация</legend>
-                <div class="form__fieldset-cover form__fieldset-cover1">
-                  <input class="form__input form__input-user" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
-                  <label class="form__label form__label-user form__label-user--1" for="phone">Номер телефона</label>
-                </div>
+                <div class="form__contact--grid">
+                  <div class="form__fieldset-cover form__fieldset-cover1">
+                    <input class="form__input form__input-user" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
+                    <label class="form__label form__label-user form__label-user--1" for="phone">Номер телефона</label>
+                  </div>
                 <div class="form__fieldset-cover">
-                  <input class="form__input form__input-user" type="email" name="email" placeholder="Введите почту *" aria-label="Поле для email" id="email">
+                  <input class="form__input form__input-user form__input-user--2" type="email" name="email" placeholder="Введите почту *" aria-label="Поле для email" id="email">
                   <label class="form__label form__label-user form__label-user--2" for="email">Адрес почты</label>
                 </div>
+              </div>
               </fieldset><!-- контакты -->
             </div><!-- ваши контакты -->
             <div class="form__cover-grey form__wrapper-application">
@@ -180,7 +179,7 @@
               </fieldset><!-- отызв -->
               <div class="form__wrapper-send">
                 <button class="form__button form__button-send" type="submit">Отправить форму</button>
-                <p class="form__note"><span class="form__star">*</span> — обязательные поля</p>
+                <p class="form__note"><span class="form__star">*</span> — Обязательные <span class="form__note-cover">для заполнения</span> поля</p>
               </div>
             </div><!-- ваши эмоции -->
           <!-- <div> -->

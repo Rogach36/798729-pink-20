@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      body {
+        opacity: 0.5;
+      }
+
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("img/MobileForm.jpg");
+      }
+
+      @media (min-width: 660px) {
+        HTML {
+          background-image: url("img/TabletFormPop.jpg");
+        }
+      }
+
+        @media (min-width: 960px) {
+          HTML {
+            background-image: url("img/DesktopIndex.jpg");
+        }
+      }
+    </style>
   </head>
   <body class="page-body">
-    <header class="page-header page-header--index page-header-wrapper">
+    <header class="page-header page-header--index">
       <!-- <div class="container сontainer--nav"> -->
       <div class="wrapper-nav">
         <nav class="main-nav main-nav--opened main-nav--nojs">

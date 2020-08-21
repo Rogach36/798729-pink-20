@@ -13,27 +13,24 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    margin-bottom: 90px;
+    width: 780px;
+    margin-bottom:  67px;
   }
 }
 
 .user-info__share-slogan {
-  /*  @media (min-width: @mobile-width-only) {
-    display: none;
-  } */
-
   @media (min-width: 140px) and (max-width: 659px) {
     display: none;
   }
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: inline-block;
   }
 }
 
 .user-info__form-wrapper {
   display: block;
-  max-width: 100%;
+  max-width: /* 100% */940px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -43,7 +40,39 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: /* 432px 458px */ 1fr 1fr;
+    grid-template-rows: 297px 158px 228px 213px 88px;
+    column-gap: /* 52px */ 35px;
+    row-gap: 69px
     /* width: 940px; */
   }
 }
+
+/* .form__wrapper-name {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.form__wrapper-application {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.form__wrapper-contact {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form__wrapper-trip {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.form__wrapper-emotion {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form__wrapper-send {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+ */
