@@ -5,9 +5,9 @@
 
 .users-photo__appeal {
   line-height: 30px;
-  margin-top: 50px;
-  margin-bottom: 55px;
-  width: 245px;
+  margin-top: 44px;
+  margin-bottom: 51px;
+  width: 283px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -25,6 +25,17 @@
 .photo-catalogue__photo-pan {
   width: 100%;
   object-fit: cover;
+
+  @media (max-width: 659px) {
+    margin-bottom: -18px;
+  }
+}
+
+.photo-catalogue__photo--marker {
+  @media (max-width: 659px) {
+    margin-bottom: 29px;
+    display: block;
+  }
 }
 
 .panorama-wrapper {
@@ -46,18 +57,21 @@
 
 .panorama-wrapper__text {
   position: absolute;
+  /* right: 1px; */
+  /* left: 159px; */
   display: block;
-  width: 130px;
+  width: 140px;
   height: 36px;
   padding-top: 5px;
   padding-bottom: 0;
   font-weight: bold;
   font-size: 12px;
-  background-color: @pink;
-  color: @white;
+  background-color: #d22856;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  right: 20px;
+  right: 19px;
+  box-sizing: border-box;
 
 
   @media (min-width: @tablet-width) {
@@ -127,6 +141,7 @@
 .users-photo__panorama-caption {
   margin: 0 auto;
   background-color: #f2f2f2;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;

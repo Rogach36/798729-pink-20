@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-   <style>
-    body {
-      opacity: 0.5;
-    }
+    <style>
+      body {
+        opacity: 0.5;
+      }
 
-    HTML {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-image: url("img/MobileForm.jpg");
-    }
-
-    @media (min-width: 660px) {
       HTML {
-        background-image: url("img/TabletForm.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("img/MobileForm.jpg");
       }
-    }
 
-      @media (min-width: 960px) {
+      @media (min-width: 660px) {
         HTML {
-          background-image: url("img/DesktopForm.jpg");
+          background-image: url("img/TabletForm.jpg");
+        }
       }
-    }
-  </style>
+
+        @media (min-width: 960px) {
+          HTML {
+            background-image: url("img/DesktopForm.jpg");
+        }
+      }
+    </style>
 </head>
 <body class="page-body">
   <header class="page-header page-header--form">
@@ -179,7 +179,7 @@
               </fieldset><!-- отызв -->
               <div class="form__wrapper-send">
                 <button class="form__button form__button-send" type="submit">Отправить форму</button>
-                <p class="form__note"><span class="form__star">*</span> — Обязательные <span class="form__note-cover">для заполнения</span> поля</p>
+                <p class="form__note"><span class="form__star">*</span> — Обязательные&nbsp;<span class="form__note-cover">для заполнения</span>&nbsp;поля</p>
               </div>
             </div><!-- ваши эмоции -->
           <!-- <div> -->
@@ -189,7 +189,9 @@
               <p class="form-popup__notice form-popup__notice-fail">Что-то пошло не так!</p>
               <p class="form-popup__description form-popup__description--fail">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             </div>
+            <div class="wrapper-bg-fail">
               <button class="form__button form__button--close" type="button">Ок</button>
+            </div>
           </section>
           <section class="form-popup form-popup--success">
             <div class="container">
@@ -201,8 +203,8 @@
               <button class="form__button form__button--close" type="button">Закрыть окно</button>
             </div>
           </section>
-        </form>
-    <!-- </div> -->
+        </div>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
