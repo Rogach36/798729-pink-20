@@ -14,6 +14,12 @@
 }
 
 .setting__wrapper {
+  padding-bottom: 1px;
+
+  @media (max-width: 659px) {
+    margin-bottom: 64px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +30,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 659px) {
+    margin-left: 34px;
+    margin-bottom: /* 21px */15px;
+    width: 208px;
+    justify-content: space-between;
+  }
 }
 
 .setting__btn {
@@ -49,7 +64,8 @@
 .setting__submit-btn {
   display: block;
   width: 280px;
-  padding: 21px;
+  /* padding: 21px; */
+  padding: 15px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -62,6 +78,10 @@
 
 .setting__submit-btn--publish {
   border: 3px solid @pink;
+
+  @media (max-width: 659px) {
+    margin-bottom: 12px;
+  }
 
   &:hover {
     background-color: @pink;
@@ -81,6 +101,10 @@
   border: 3px solid  rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
 
+  @media (max-width: 659px) {
+    margin-bottom: 46px;
+  }
+
   &:hover {
     border: 3px solid rgba(40, 54, 69, 0.3);
     color: rgba(40, 54, 69, 0.3);
@@ -96,15 +120,52 @@
   }
 }
 
+.setting__range-1 {
+  -webkit-appearance: none;
+  /* width: 100%; */
+  width: 258px;
+}
 
-/* display: block;
-    width: 280px;
-    padding: 21px 90px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    color: #d22856;
-    align-items: center;
-    border-radius: 30px;
-    outline: none; */
+.setting__range-1::-webkit-slider-runnable-track {
+  /* width: 240px; */
+  height: 2px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: #283645;
+}
+
+.setting__range-1::-moz-range-thumb {
+  /* width: 240px; */
+  height: 2px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: #283645;
+}
+
+.setting__range-1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7px;
+}
+
+.setting__range-1::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.setting__range-2,
+.setting__range-3 {
+  @media (max-width: 659px) {
+    display: none;
+  }
+}

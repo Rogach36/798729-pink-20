@@ -22,7 +22,7 @@
 
   @media (min-width: @mobile-width-only) {
     width: 180px;
-    margin-top: 37px;
+    margin-top: 30px;
     margin-bottom: /* 38px */ /* 55px */ 44px;
     margin-right: auto;
     margin-left: auto;
@@ -43,6 +43,16 @@
 .social__item {
   width: 48px;
   height: 48px;
+
+  @media (max-width: 659px) {
+    &:nth-child(2) {
+      margin-right: 2px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 5px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 6px;

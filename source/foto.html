@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-    <style>
+      <style>
       body {
         opacity: 0.5;
       }
@@ -67,18 +67,19 @@
           <a class="photo-catalogue__photo photo-catalogue__photo--marker" href="#">
             <img class="photo-catalogue__photo-pan" src="../img/panorama-mobile@1x.jpg" alt="Фото пользователя">
           </a>
-
-          <div class="users-photo__panorama-caption container">
+          <div class="container">
+          <div class="users-photo__panorama-caption">
             <p class="photo-catalogue__user-name">Анна <span class="photo-catalogue__time">(5 минут назад)</span></p>
             <p class="photo-catalogue__user-comment">Прыгать или нет? Напишите в
                     комментарии свой совет и
-                    смотрите прямую трансляцию в
+                    смотрите&nbsp;прямую трансляцию в
                     перископе, задавайте свои вопросы!</p>
             <div class="photo-catalogue__inter">
               <button class="photo-catalogue__like-btn" aria-label="Нажми, если понравилось фото"></button>
               <p class="photo-catalogue__reaction">Нравится: 215</p>
             </div>
           </div>
+        </div>
 
       <div class="container">
         <!--  <div class="users-photo__panorama-caption ">
@@ -163,8 +164,8 @@
               <a class="photo-list__photo" href="#">
                 <img src="../img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
               </a>
-              <p class="photo-catalogue__user-name">Надежда <span class="photo-list__time">(45 часов назад)</span></p>
-              <p class="photo-list__user-comment">Всем GM и взаимные лайки!</p>
+              <p class="photo-catalogue__user-name photo-catalogue__user-name--last">Надежда <span class="photo-list__time">(45 часов назад)</span></p>
+              <p class="photo-list__user-comment photo-list__user-comment--last">Всем GM и взаимные лайки!</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
                 <p class="photo-list__reaction">Нравится: 2560</p>
@@ -194,9 +195,9 @@
               <li><button class="setting__btn setting__btn--fill" aria-label="Кнопка заливки"></button></li>
               <li><button class="setting__btn setting__btn--light" aria-label="Кнопка коррекции освещения"></button></li>
             </ul>
-            <input class="setting__range" type="range">
-            <input class="setting__range" type="range">
-            <input class="setting__range" type="range">
+            <input class="setting__range-1" type="range">
+            <input class="setting__range-2" type="range">
+            <input class="setting__range-3" type="range">
           </div>
           <button class="setting__submit-btn setting__submit-btn--publish" type="submit">Запостить</button>
           <button class="setting__submit-btn setting__submit-btn--cancel" type="submit">Отмена</button>
