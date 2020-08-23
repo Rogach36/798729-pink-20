@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-       <style>
+      <style>
       body {
         opacity: 0.5;
       }
@@ -69,7 +69,7 @@
           <source media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Фото пользователя">
           <source media="(min-width: 660px)" srcset="../img/panorama-tablet.jpg" width="700" height="509" alt="Фото пользователя">
           <img class="photo-catalogue__photo-pan" src="../img/panorama-mobile@1x.jpg" width="370" height="137" alt="Фото пользователя">
-      </picture>
+        </picture>
       </a>
       <div class="container">
         <div class="users-photo__panorama-caption">
@@ -100,10 +100,14 @@
           <li class="photo-list__item">
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
-                <img src="../img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="../img/photo-car-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+                  <source media="(min-width: 660px)" srcset="../img/photo-car-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <img src="../img/photo-car-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
+                </picture>
               </a>
               <p class="photo-list__user-name">Левон <span class="photo-list__time">(5 часов назад)</span></p>
-              <p class="photo-list__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo-list__user-comment">Вчера он на луну летал, сегодня в<br> руки к нам попал.</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
                 <p class="photo-list__reaction">Нравится: 356</p>
@@ -113,10 +117,14 @@
           <li class="photo-list__item">
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
-                <img src="../img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="../img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+                  <source media="(min-width: 660px)" srcset="../img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <img src="../img/photo-drumset-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
+                </picture>
               </a>
               <p class="photo-list__user-name">Антон <span class="photo-list__time">(12 часов назад)</span></p>
-              <p class="photo-list__user-comment">Соседи будут рады!</p>
+              <p class="photo-list__user-comment photo-list__user-comment--2">Соседи будут рады!</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
                 <p class="photo-list__reaction">Нравится: 666</p>
@@ -126,10 +134,14 @@
           <li class="photo-list__item">
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
-                <img src="../img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="../img/photo-window-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+                  <source media="(min-width: 660px)" srcset="../img/photo-window-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <img src="../img/photo-window-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
+                </picture>
               </a>
               <p class="photo-list__user-name">Борис <span class="photo-list__time">(20 часов назад)</span></p>
-              <p class="photo-list__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo-list__user-comment photo-list__user-comment--3">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
                 <p class="photo-list__reaction">Нравится: 215</p>
@@ -139,10 +151,14 @@
           <li class="photo-list__item">
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
-                <img src="../img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="../img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+                  <source media="(min-width: 660px)" srcset="../img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <img src="../img/photo-fair-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
+                </picture>
               </a>
               <p class="photo-list__user-name">Сергей <span class="photo-list__time">(25 часов назад)</span></p>
-              <p class="photo-list__user-comment">Самая кубанская в мире!</p>
+              <p class="photo-list__user-comment photo-list__user-comment--4">Самая кубанская в мире!</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
                 <p class="photo-list__reaction">Нравится: 4</p>
@@ -152,10 +168,14 @@
           <li class="photo-list__item">
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
-                <img src="../img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="../img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+                  <source media="(min-width: 660px)" srcset="../img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <img src="../img/photo-pov-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
+                </picture>
               </a>
               <p class="photo-list__user-name">Максим <span class="photo-list__time">(40 часов назад)</span></p>
-              <p class="photo-list__user-comment">Где снег-то?</p>
+              <p class="photo-list__user-comment photo-list__user-comment--5">Где снег-то?</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
                 <p class="photo-list__reaction">Нравится: 150</p>
@@ -165,9 +185,13 @@
           <li class="photo-list__item">
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
-                <img src="../img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="../img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+                  <source media="(min-width: 660px)" srcset="../img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <img src="../img/photo-wing-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
+                </picture>
               </a>
-              <p class="photo-catalogue__user-name photo-catalogue__user-name--last">Надежда <span class="photo-list__time">(45 часов назад)</span></p>
+              <p class="photo-list__user-name">Надежда <span class="photo-list__time">(45 часов назад)</span></p>
               <p class="photo-list__user-comment photo-list__user-comment--last">Всем GM и взаимные лайки!</p>
               <div class="photo-list__inter">
                 <button class="photo-list__like-btn" type="button" aria-label="Нажми, если понравилось фото"></button>
@@ -188,7 +212,11 @@
       <div class="container editor__panel-wrapper">
         <div class="editor__pic">
           <a class="editor__photo-change" href="#">
-            <img src="../img/photo-road-mobile@1x.jpg" alt="Фото для редактирования">
+            <picture>
+              <source media="(min-width: 960px)" srcset="../img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              <source media="(min-width: 660px)" srcset="../img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              <img src="../img/photo-road-mobile@1x.jpg" width="300" height="400" alt="Фото для редактирования">
+            </picture>
           </a>
         </div>
         <form class="editor__panel setting" action="https://echo.htmlacademy.ru" method="post">
@@ -198,9 +226,11 @@
               <li><button class="setting__btn setting__btn--fill" aria-label="Кнопка заливки"></button></li>
               <li><button class="setting__btn setting__btn--light" aria-label="Кнопка коррекции освещения"></button></li>
             </ul>
+            <div class="setting__range-wrapper">
             <input class="setting__range-1" type="range">
             <input class="setting__range-2" type="range">
             <input class="setting__range-3" type="range">
+          </div>
           </div>
           <button class="setting__submit-btn setting__submit-btn--publish" type="submit">Запостить</button>
           <button class="setting__submit-btn setting__submit-btn--cancel" type="submit">Отмена</button>
