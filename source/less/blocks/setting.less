@@ -34,6 +34,10 @@
     width: 210px;
     margin-top: 19px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-top: -47px;
+    }
   }
 
 .setting__list {
@@ -55,6 +59,12 @@
     max-width: 40px;
     margin-top: -42px;
     margin-bottom: 37px
+  }
+}
+
+.setting__btn-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 
@@ -123,6 +133,9 @@
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-right: 43px;
+    margin-left: -1px;
+    margin-bottom: 0;
   }
 }
 
@@ -172,9 +185,7 @@
 
 .setting__range-3 {
   margin-top: 65px;
- }
-
-
+}
 
 .setting__range-1::-webkit-slider-runnable-track,
 .setting__range-2::-webkit-slider-runnable-track,
