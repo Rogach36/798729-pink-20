@@ -31,27 +31,29 @@
 </head>
 <body class="page-body">
   <header class="page-header page-header--foto">
-    <div class="wrapper-nav">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <div class="main-nav__button-wrap container">
-          <a class="page-header__logo" href="index.html">
-            <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-          <!--обертка для позиционирования меню-->
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
-          </ul>
-      </nav>
+    <div class="wrapper-nav-background">
+      <div class="wrapper-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <div class="main-nav__button-wrap container">
+            <a class="page-header__logo" href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+            <!--обертка для позиционирования меню-->
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
+              <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
+            </ul>
+        </nav>
+      </div>
     </div>
     <div class="container">
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <h1 class="page-header__title page-header__title--foto">Фотографии пользователей</h1>
     </div>
   </header>
   <main class="page-main">
@@ -66,8 +68,8 @@
       </div>
       <a class="photo-catalogue__photo photo-catalogue__photo--marker" href="#">
         <picture>
-          <source media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Фото пользователя">
-          <source media="(min-width: 660px)" srcset="../img/panorama-tablet.jpg" width="700" height="509" alt="Фото пользователя">
+          <source media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="../img/panorama-tablet.jpg">
           <img class="photo-catalogue__photo-pan" src="../img/panorama-mobile@1x.jpg" width="370" height="137" alt="Фото пользователя">
         </picture>
       </a>
@@ -101,8 +103,8 @@
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="../img/photo-car-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-                  <source media="(min-width: 660px)" srcset="../img/photo-car-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <source media="(min-width: 960px)" srcset="../img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="../img/photo-car-tablet@1x.jpg">
                   <img src="../img/photo-car-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
                 </picture>
               </a>
@@ -118,8 +120,8 @@
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="../img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-                  <source media="(min-width: 660px)" srcset="../img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <source media="(min-width: 960px)" srcset="../img/photo-drumset-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="../img/photo-drumset-tablet@1x.jpg">
                   <img src="../img/photo-drumset-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
                 </picture>
               </a>
@@ -135,8 +137,8 @@
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="../img/photo-window-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-                  <source media="(min-width: 660px)" srcset="../img/photo-window-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <source media="(min-width: 960px)" srcset="../img/photo-window-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="../img/photo-window-tablet@1x.jpg">
                   <img src="../img/photo-window-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
                 </picture>
               </a>
@@ -152,8 +154,8 @@
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="../img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-                  <source media="(min-width: 660px)" srcset="../img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <source media="(min-width: 960px)" srcset="../img/photo-fair-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="../img/photo-fair-tablet@1x.jpg">
                   <img src="../img/photo-fair-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
                 </picture>
               </a>
@@ -169,8 +171,8 @@
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="../img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-                  <source media="(min-width: 660px)" srcset="../img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <source media="(min-width: 960px)" srcset="../img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="../img/photo-pov-tablet@1x.jpg">
                   <img src="../img/photo-pov-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
                 </picture>
               </a>
@@ -186,8 +188,8 @@
             <div class="photo-list__user-card">
               <a class="photo-list__photo" href="#">
                 <picture>
-                  <source media="(min-width: 960px)" srcset="../img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-                  <source media="(min-width: 660px)" srcset="../img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя">
+                  <source media="(min-width: 960px)" srcset="../img/photo-wing-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="../img/photo-wing-tablet@1x.jpg">
                   <img src="../img/photo-wing-mobile@1x.jpg" width="300" height="180" alt="Фото пользователя">
                 </picture>
               </a>
@@ -214,8 +216,8 @@
         <div class="editor__pic">
           <a class="editor__photo-change" href="#">
             <picture>
-              <source media="(min-width: 960px)" srcset="../img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя">
-              <source media="(min-width: 660px)" srcset="../img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Фото пользователя">
+              <source media="(min-width: 960px)" srcset="../img/photo-road-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="../img/photo-road-tablet@1x.jpg">
               <img src="../img/photo-road-mobile@1x.jpg" width="300" height="400" alt="Фото для редактирования">
             </picture>
           </a>

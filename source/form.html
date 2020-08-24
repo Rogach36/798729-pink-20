@@ -31,27 +31,29 @@
 </head>
 <body class="page-body">
   <header class="page-header page-header--form">
-    <div class="wrapper-nav">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <div class="main-nav__button-wrap container">
-          <a class="page-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" width="147" height="40">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" width="145" height="40">
-              <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a href="foto.html">Фотографии</a></li>
-          <li class="site-list__item"><a>Конкурс</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
-        </ul>
-      </nav>
+    <div class="wrapper-nav-background">
+      <div class="wrapper-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <div class="main-nav__button-wrap container">
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+              </picture>
+            </a>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a href="foto.html">Фотографии</a></li>
+            <li class="site-list__item"><a>Конкурс</a></li>
+            <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="container">
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -132,7 +134,7 @@
             <div class="container form__wrapper-contact">
               <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--contacts">
                 <legend class="form__legend form__legend-contact form__legend--not">Контактная информация</legend>
-                <div class="form__contact--grid">
+                <div class="form__contact-grid">
                   <div class="form__fieldset-cover form__fieldset-cover1">
                     <input class="form__input form__input-user" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
                     <label class="form__label form__label-user form__label-user--1" for="phone">Номер телефона</label>
@@ -208,7 +210,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container footer-wrapper">
+    <div class="container footer-wrapper footer-wrapper--form">
       <div class="page-footer__social social">
         <a class="page-footer__logo" href="#">
           <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Приложение Pink">
