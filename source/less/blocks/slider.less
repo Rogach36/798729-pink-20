@@ -50,6 +50,10 @@
       background-position: 0 0;
     }
   }
+
+  @media (min-width: 660px) {
+    margin-bottom: -7px;
+  }
 }
 
 
@@ -59,16 +63,21 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: -3px;
+    width: 90px;
+    margin: 0 auto;
+    display: flex;
   }
 }
 
 .slider__toggle {
   background-color: rgba(40, 54, 69, 0.3);
   border: none;
-  padding: 3px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   outline: none;
   margin-right: 10px;
+  box-sizing: content-box;
 
   &:hover {
     background-color: rgba(40, 54, 69, 0.6);
@@ -80,6 +89,26 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 14px;
+    margin-right: 16px;
+    margin-top: 2px;
+  }
+}
+
+/* .slider__toggle--middle {
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
+} */
+
+.slider__toggle--first {
+  margin-left: 14px;
+  margin-top: 0px;
+}
+
+.slider__toggle--last {
+  @media (min-width: @tablet-width) {
+    /* margin-left: 1px; */
+    margin-left: 3px;
   }
 }
 
@@ -87,7 +116,7 @@
 .slider__toggle--current:hover,
 .slider__toggle--current:active {
   background-color: @white;
-  border: 3px solid @text-page;
+   border: 3px solid @text-page;
 }
 
 .slider-table__toggle {

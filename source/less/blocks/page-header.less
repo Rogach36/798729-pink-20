@@ -22,9 +22,12 @@
 }
 
 .page-header--index {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 258px;
-  background-repeat: no-repeat, no-repeat;
+  @media (max-width: 659px) {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: center 258px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 47%;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -83,7 +86,8 @@
   @media (min-width: @tablet-width) {
     width: 152px;
     height: 91px;
-    margin-bottom: -3px;
+    margin-top: 7px;
+    margin-bottom: -9px;
   }
 
   @media (min-width: @desktop-width) {
