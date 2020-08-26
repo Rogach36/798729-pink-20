@@ -8,20 +8,20 @@
   background-repeat: no-repeat; */
 
   @media (min-width: @tablet-width) {
-    min-height: 680px;
+    /* min-height: 680px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 340px;
+    background-position: center 340px; */
     /* padding-bottom: 110px; */
   }
-
+/*
   @media (min-width: @desktop-width) {
     min-height: 395px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center top;
-  }
+  } */
 }
 
-.page-header--index {
+/* .page-header--index {
   @media (max-width: 659px) {
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: center 258px;
@@ -32,6 +32,7 @@
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 274px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -40,24 +41,47 @@
     background-position: top center;
   }
 }
+ */
+
+.wrapper-bg-foto { /* НОВЫЙ КОНТЕЙНЕР ДЛЯ ФОНОВ. ИЗОБРАЖ. */
+  @media (min-width: @mobile-width-only) {
+  min-height: 165px;
+  background-color: @menu-bg;
+  color: @white;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center -64px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 44px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: /* 695px */ 331px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: center -119px;
+    margin-bottom: 91px;
+    background-size: 183%;
+  }
+}
 
 .page-header--form,
 .page-header--foto {
-  min-height: 496px;
-  background-color: @menu-bg;
+  /* min-height: 496px; */
+  min-height: 241px;
+  /* background-color: @menu-bg;
   color: @white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 259px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 44px;
+  margin-bottom: 44px; */
 
-  @media (min-width: @tablet-width) {
+ /*  @media (min-width: @tablet-width) {
     min-height: 695px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 262px;
     margin-bottom: 91px;
-  }
+  } */
 
   @media (min-width: @desktop-width) {
     min-height: 394px;
@@ -120,11 +144,14 @@
   width: 231px;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 76px;
+  padding-top: /* 39px */ 27px;
 
   @media (min-width: @tablet-width) {
     width: 483px;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 55px;
   }
 
   @media (min-width: @desktop-width) {

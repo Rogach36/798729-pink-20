@@ -7,8 +7,10 @@
   line-height: 30px;
   margin-top: 44px;
   margin-bottom: 51px;
+  margin-left: -2px;
   width: 283px;
   text-align: center;
+  margin: 0 auto
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -50,6 +52,7 @@
   height: 36px;
   padding-top: 5px;
   padding-bottom: 0;
+  padding-right: 2px;
   font-weight: bold;
   font-size: 12px;
   background-color: #d22856;
@@ -105,7 +108,7 @@
 
 .photo-list__user-card {
   background-color: #f2f2f2;
-  margin-bottom: 20px;
+  margin-bottom: /* 20px */ -5px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -162,6 +165,7 @@
 .photo-list__inter {
   display: flex;
   width: 145px;
+  padding-bottom: 2px;
 
   @media (min-width: @tablet-width) {
     width: 290px;
@@ -193,9 +197,11 @@
   text-transform: uppercase;
   color: @pink;
   width: 112px;
+  padding-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     margin-left: 30px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
