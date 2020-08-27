@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
-     <!-- <style>
+     <!--  <style>
       body {
         opacity: 0.5;
       }
@@ -115,9 +115,9 @@
                 </li>
                 <li class="features__item">
                   <h3 class="features__title">Меняет мир вокруг</h3>
-                  <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, <span class="move-word">чтобы</span> усилить эффект</p>
+                  <p class="features__description features__description--second">Сделайте снимок и украсьте его смайликом или текстовой подписью, <span class="move-word">чтобы</span> усилить эффект</p>
                 </li>
-                <li class="features__item">
+                <li class="features__item features__item--last">
                   <h3 class="features__title features__title--last">Заводит новых друзей</h3>
                   <p class="features__description features__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
@@ -239,7 +239,11 @@
       <div class="container footer-wrapper">
         <div class="page-footer__social social">
           <a class="page-footer__logo" href="#">
-            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Приложение Pink">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-blue-desktop.svg">
+              <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Приложение Pink">
+            </picture>
           </a>
           <ul class="social__list">
             <li class="social__item">

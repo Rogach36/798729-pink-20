@@ -3,48 +3,33 @@
   min-height: 540px;
   background-color: @menu-bg;
   color: @white;
-  /* background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 290px;
-  background-repeat: no-repeat; */
-
-  @media (min-width: @tablet-width) {
-    /* min-height: 680px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 340px; */
-    /* padding-bottom: 110px; */
-  }
-/*
-  @media (min-width: @desktop-width) {
-    min-height: 395px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center top;
-  } */
+  background-repeat: no-repeat, no-repeat;
 }
 
-/* .page-header--index {
-  @media (max-width: 659px) {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-position: center 258px;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 100% 47%;
-  }
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 274px;
-
-  }
-
+.page-header--index {
   @media (min-width: @desktop-width) {
     min-height: 853px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: top center;
+    background-repeat: no-repeat, no-repeat;
   }
 }
- */
 
-.wrapper-bg-foto { /* НОВЫЙ КОНТЕЙНЕР ДЛЯ ФОНОВ. ИЗОБРАЖ. */
-  @media (min-width: @mobile-width-only) {
+.page-header--foto {
+  /* сюда фон для десктопа */
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: center -110px;
+    margin-bottom: 88px;
+    background-size: 183%;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+/* НОВЫЙ КОНТЕЙНЕР ДЛЯ ФОНОВ. ИЗОБРАЖ. */
+.wrapper-bg-foto {
+  @media (max-width: 659px) {
   min-height: 165px;
   background-color: @menu-bg;
   color: @white;
@@ -55,19 +40,23 @@
   margin-bottom: 44px;
   }
 
-  @media (min-width: @tablet-width) {
-    min-height: /* 695px */ 331px;
+  @media (max-width: 959px) {
+    min-height: 331px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center -110px;
     margin-bottom: 88px;
     background-size: 183%;
   }
+
+  /* @media (min-width: @desktop-width) {
+       background-image:
+  }*/
 }
 
-.page-header--form,
-.page-header--foto {
+/* .page-header--form,
+.page-header--foto { */
   /* min-height: 496px; */
-  min-height: 241px;
+ /*  min-height: 241px; */
   /* background-color: @menu-bg;
   color: @white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -82,14 +71,14 @@
     background-position: center 262px;
     margin-bottom: 91px;
   } */
-
+/*
   @media (min-width: @desktop-width) {
     min-height: 394px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center top;
     margin-bottom: -9px;
   }
-}
+} */
 
 .page-header--form {
   @media (min-width: @desktop-width) {
@@ -134,6 +123,8 @@
   @media (min-width: @desktop-width) {
     width: 147px;
     height: 40px;
+    margin-left: -11px;
+    margin-top: -10px;
   }
 }
 
@@ -156,17 +147,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 768px;
-    margin-top: 60px;
+    width: 400px;
+    /* margin-top: 60px; */
+    margin-top: -121px;
   }
 }
 
-.page-header__title--foto {
+/* .page-header__title--foto {
   @media (min-width: @desktop-width) {
     width: 400px;
     margin-top: 60px;
   }
-}
+} */
 
 .page-header__title--form {
   @media (max-width: 659px) {

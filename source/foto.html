@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-        <style>
+          <style>
       body {
         opacity: 0.5;
       }
@@ -236,9 +236,9 @@
               <li><button class="setting__btn setting__btn--light" aria-label="Кнопка коррекции освещения"></button></li>
             </ul>
             <div class="setting__range-wrapper">
-            <input class="setting__range-1" type="range">
-            <input class="setting__range-2" type="range">
-            <input class="setting__range-3" type="range">
+            <input class="setting__range" type="range">
+            <input class="setting__range" type="range">
+            <input class="setting__range" type="range">
           </div>
           </div>
           <div class="setting__btn-wrapper">
@@ -254,7 +254,11 @@
     <div class="container footer-wrapper">
       <div class="page-footer__social social">
         <a class="page-footer__logo" href="#">
-          <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Приложение Pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Приложение Pink">
+          </picture>
         </a>
         <ul class="social__list">
           <li class="social__item">
