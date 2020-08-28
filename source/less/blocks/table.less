@@ -4,10 +4,12 @@
   max-width: 100%;
   border-collapse: collapse;
   text-align: center;
+  margin-bottom: /* 213px */227px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
     margin-left: 2px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,6 +75,10 @@ td,
   width: 152px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
+
+  @media (max-width: 659px) {
+  width: 100%;
+  }
 }
 
 .table__head {
@@ -127,10 +133,12 @@ td,
   position: absolute;
   width: 61px;
   height: 61px;
+  top: 0;
   left: 0;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 15;
 }
 
 .table__name-price--hit::after {
@@ -138,8 +146,10 @@ td,
   position: absolute;
   width: 61px;
   height: 61px;
-  left: -7px;
+  top: 0;
+  left: 0;
   transform: rotate(-45deg);
   font-size: 14px;
   text-transform: uppercase;
+  z-index: 15;
 }
