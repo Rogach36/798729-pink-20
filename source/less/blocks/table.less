@@ -3,7 +3,7 @@
   max-width: 100%;
   border-collapse: collapse;
   text-align: center;
-  margin-bottom: /* 213px */227px;
+  margin-bottom: /* 213px */231px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -136,11 +136,11 @@ td,
 .table__name-price--hit::before {
   content: "";
   position: absolute;
-  width: 61px;
-  height: 61px;
+  width: 74px;
+  height: 74px;
   top: 0;
   left: 0;
-  background-image: url("../img/bg-hit.svg");
+  background-image: url("../img/hit-ribbon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   z-index: 15;
@@ -149,11 +149,10 @@ td,
 .table__name-price--hit::after {
   content: "Хит";
   position: absolute;
-  width: 61px;
-  height: 61px;
-  top: 0;
-  left: 0;
+  top: 18px;
+  left: 14px;
   transform: rotate(-45deg);
+  font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
   z-index: 15;
