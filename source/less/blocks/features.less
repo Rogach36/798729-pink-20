@@ -1,3 +1,15 @@
+/* .container--features {
+  position: relative;
+}
+
+.container--features::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  border-right: 100vw solid #f2f2f2;
+  border-top: 8vw solid transparent;
+} */
+
 .features__slogan {
   font-style: normal;
   font-weight: 300;
@@ -54,6 +66,16 @@
 
 .features__background-cover-white {
   background-color: @grey-bg;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    border-left: 100vw solid @white;
+    border-bottom: 8vw solid #f2f2f2;
+  }
 }
 
 .features__list {
@@ -65,11 +87,13 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     padding-top: 15px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: left top;
     padding-bottom: 2px;
     margin-bottom: 52px;
+    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {

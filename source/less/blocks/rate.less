@@ -1,10 +1,20 @@
 .rate {
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
+  position: relative;
 
   @media (min-width: @mobile-width-only) {
     min-height: 379px;
     padding-top: 100px;
     margin-bottom: 45px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      border-left: 100vw solid @white;
+      border-bottom: 8vw solid #f2f2f2;
+    }
   }
 
   @media (min-width: @tablet-width) {
