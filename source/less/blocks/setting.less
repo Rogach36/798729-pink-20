@@ -24,7 +24,7 @@
     display: flex;
     /* flex-wrap: wrap; */
     width: 275px;
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -186,7 +186,7 @@
 }
 
 .setting__range {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   width: 240px;
   appearance: none;
   outline: none;
@@ -207,14 +207,14 @@
   background: #283645;
 
   @media (min-width: @desktop-width) {
-   /*  margin-bottom: 41px; */
+    /* margin-bottom: 41px; */
   }
 }
 
-input[type=range] {
+input[type="range"] {
   @media (max-width: 659px) {
     margin-bottom: 0;
-    }
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 69px;
@@ -223,18 +223,18 @@ input[type=range] {
   @media (min-width: @desktop-width) {
     margin-bottom: 68px;
     margin-left: 31px;
-   }
+  }
 }
 
-.setting__range::-moz-range-thumb {
+/* .setting__range::-moz-range-thumb {
   height: 2px;
   margin-left: 20px;
   cursor: pointer;
   background: #283645;
-}
+} */
 
 .setting__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none; /*без него ползунки теряют стилизацию*/
   height: 14px;
   width: 14px;
   background: #ffffff;
@@ -245,7 +245,7 @@ input[type=range] {
 }
 
 .setting__range::-moz-range-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   height: 14px;
   width: 14px;
   background: #ffffff;
@@ -254,9 +254,9 @@ input[type=range] {
   cursor: pointer;
 }
 
-input[type=range]:nth-child(2),
-input[type=range]:nth-child(3) {
+input[type="range"]:nth-child(2),
+input[type="range"]:nth-child(3) {
   @media (max-width: 659px) {
-  display: none;
+    display: none;
   }
 }
