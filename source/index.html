@@ -30,9 +30,9 @@
     </style> -->
   </head>
   <body class="page-body">
-    <header class="page-header page-header--index">
-        <div class="wrapper-nav">
-          <nav class="main-nav main-nav--opened main-nav--nojs"><!-- убрал container -->
+    <header class="page-header page-header--nav-closed page-header--index page-header--nav-nojs">
+        <div class="wrapper-nav page-header__wrapper-nav"> <!-- page-header__wrapper-nav класс для сокрытия полоски с полупроз. фоном в откр. меню -->
+          <nav class="main-nav"><!-- убрал container --> <!-- убрал main-nav--opened и заменил на page-header--nav-opened убрал main-nav--nojs -->
             <div class="main-nav__button-wrap">
               <a class="page-header__logo">
                 <picture>
@@ -45,7 +45,7 @@
                 <span class="visually-hidden">Открыть или закрыть меню</span>
               </button>
             </div>
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list page-header__nav">
               <li class="site-list__item">
                 <a class="site-list__item site-list__item--current">Главная</a>
               </li>
@@ -61,7 +61,7 @@
             </ul>
           </nav>
         </div>
-        <div class="wrapper-bg-index">
+        <div class="wrapper-bg-index page-header__wrapper-bg">
           <div class="container">
             <section class="download-header">
               <h2 class="visually-hidden">Скачать приложение для разных платформ</h2>
