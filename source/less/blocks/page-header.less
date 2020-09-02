@@ -152,7 +152,7 @@
   width: 1px;
 }
 
-/* MENU */
+/* Стили для фонов при открытом или закрытом меню */
 
 .page-header--nav-opened {
   .page-header__nav {
@@ -175,8 +175,21 @@
       background-image: url("../img/bg-back-tablet@1x.jpg");
       background-position: center top;
       background-repeat: no-repeat;
-      background-size: cover;
+      /* background-size: cover; */
+      background-size: 100% 59%;
       z-index: 0;
+
+      @media (min-width: @tablet-width) {
+        left: 0;
+        top: -100px;
+        bottom: 0;
+        right: 0;
+        background-image: url("../img/bg-back-tablet@1x.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+      }
 
       @media (min-width: @desktop-width) {
         top: -240px;
@@ -196,9 +209,8 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: center top;
     background-repeat: no-repeat;
-    /* background-size: 100% 72%; */
-    background-size: contain;
-    /* min-height: 459px; */
+    background-size: 100% 59%;
+    min-height: 462px;
   }
 
   @media (min-width: @tablet-width) {
