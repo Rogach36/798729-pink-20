@@ -24,7 +24,7 @@
     margin-bottom: 49px;
   }
  */
- /*  @media (min-width: @desktop-width) {
+  /*  @media (min-width: @desktop-width) {
     background-image: none;
   } */
 }
@@ -42,8 +42,8 @@
       width: 258px;
       height: 286px;
       top: 110px; */
-      /* left: -20px; */
-      /*  background-image: url("../img/iphone-hand-mobile@1x.png");
+      /*left: -20px; */
+      /*background-image: url("../img/iphone-hand-mobile@1x.png");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
@@ -88,7 +88,7 @@
   }
 }
 
-.download-header__slogan {
+ .download-header__slogan {
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
@@ -97,27 +97,27 @@
 
   @media (max-width: 659px) {
     padding-top: 25px;
-    padding-bottom: 320px;
+    padding-bottom: 312px;
     margin: 0;
     position: relative;
     z-index: 1;
+    width: 237px;
+    margin: 0 auto;
 
-    &::after {
+  /*   &::after {
       content: "";
       display: block;
       position: absolute;
-      /* width: 320px; */
       height: 462px;
       left: 0;
-      /* top: -100px; */
-      bottom: 62px;
+      bottom: 0;
       right: 0;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: center top;
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
-    }
+    } */
   }
 
   @media (min-width: @tablet-width) {
@@ -131,7 +131,6 @@
   @media (min-width: @desktop-width) {
     width: 237px;
     margin-bottom: 35px;
-    /* margin-top: -154px; */
     margin-left: 31px;
     font-size: 50px;
     line-height: 68px;
@@ -146,6 +145,7 @@
     padding-top: 28px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 41px;
     width: 320px;
     position: relative;
 
@@ -156,8 +156,8 @@
       display: block;
       width: 258px;
       height: 286px;
-      bottom: 306px;
-      /* left: -20px; */
+      bottom: 100%;
+      left: 0;
       background-image: url("../img/iphone-hand-mobile@1x.png");
       background-position: 0 0;
       background-repeat: no-repeat;
@@ -173,7 +173,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: /* 20px */38px;
   color: @white;
   border: 3px solid #ffffff;
   border-radius: 30px;
@@ -207,6 +207,7 @@
   font-weight: 300;
   width: 280px;
   text-align: center;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
     position: relative;

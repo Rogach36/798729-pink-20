@@ -4,12 +4,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 45px;
-  margin-bottom: 20px;
+  /* margin-top: 45px; */
+  /* margin-bottom: 20px; */
   width: 262px;
 
   @media (min-width: @tablet-width) {
     /* margin-top: 40px; */
+    margin-top: 45px;
     margin-bottom: 36px;
     position: relative;
     z-index: 6;
@@ -34,6 +35,13 @@
   background-position: 0 0;
   margin-left: 22px;
   margin-top: -12px;
+
+  @media (max-width: 659px) {
+    position: relative;
+    margin: 0;
+    bottom: 7px;
+    left: 9px;
+  }
 }
 
 .platform-list__item--android {
@@ -43,6 +51,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-top: -7px;
+
+  @media (max-width: 659px) {
+    margin-top: 0;
+  }
 }
 
 .platform-list__item--microsoft {
@@ -52,4 +64,11 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-top: -1px;
+
+  @media (max-width: 659px) {
+    position: relative;
+    margin: 0;
+    top: 4px;
+    right: 8px;
+  }
 }
