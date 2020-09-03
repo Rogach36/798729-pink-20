@@ -20,8 +20,13 @@
 }
 
 .site-list__item {
+  @media (max-width: 659px) {
+    position: relative;
+    z-index: 2;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-left: 79px;    
+    margin-left: 79px;
   }
 }
 
