@@ -30,10 +30,10 @@
     </style> -->
 </head>
 <body class="page-body">
-  <header class="page-header page-header--foto">
+  <header class="page-header page-header--nav-closed page-header--foto page-header--nav-nojs">
     <div class="wrapper-nav-background">
-      <div class="wrapper-nav">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+      <div class="wrapper-nav page-header__wrapper-nav"><!-- page-header__wrapper-nav класс для сокрытия полоски с полупроз. фоном в откр. меню -->
+        <nav class="main-nav"><!-- убрал container --> <!-- убрал main-nav--opened и заменил на page-header--nav-opened убрал main-nav--nojs -->
           <div class="main-nav__button-wrap container">
             <a class="page-header__logo" href="index.html">
               <picture>
@@ -47,7 +47,7 @@
             </button>
           </div>
             <!--обертка для позиционирования меню-->
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list page-header__nav">
               <li class="site-list__item"><a href="index.html">Главная</a></li>
               <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
               <li class="site-list__item"><a href="form.html">Конкурс</a></li>
@@ -56,7 +56,7 @@
         </nav>
       </div>
     </div>
-    <div class="wrapper-bg-foto">
+    <div class="wrapper-bg-foto page-header__wrapper-bg"><!-- ЗДЕСЬ СТОИТ ФОН С УЛИЦЕЙ -->
       <div class="container">
         <h1 class="page-header__title page-header__title--foto">Фотографии пользователей</h1>
       </div>

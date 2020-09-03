@@ -30,10 +30,10 @@
     </style>
 </head>
 <body class="page-body">
-  <header class="page-header page-header--form">
+  <header class="page-header page-header--nav-opened page-header--form page-header--nav-nojs">
     <div class="wrapper-nav-background">
-      <div class="wrapper-nav">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+      <div class="wrapper-nav page-header__wrapper-nav"><!-- page-header__wrapper-nav класс для сокрытия полоски с полупроз. фоном в откр. меню -->
+        <nav class="main-nav"><!-- убрал container --> <!-- убрал main-nav--opened и заменил на page-header--nav-opened убрал main-nav--nojs -->
           <div class="main-nav__button-wrap container">
             <a class="page-header__logo" href="index.html">
               <picture>
@@ -46,7 +46,7 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list page-header__nav">
             <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item site-list__item--active"><a href="foto.html">Фотографии</a></li>
             <li class="site-list__item"><a>Конкурс</a></li>
@@ -55,7 +55,7 @@
         </nav>
       </div>
     </div>
-    <div class="wrapper-bg-form">
+    <div class="wrapper-bg-form page-header__wrapper-bg">
       <div class="container">
         <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
