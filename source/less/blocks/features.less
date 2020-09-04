@@ -83,7 +83,7 @@
 .features__background-cover-grey {
   background-color: @grey-bg;
   position: relative;
-  
+
   &::after {
     position: absolute;
     content: "";
@@ -111,7 +111,7 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: left top;
     padding-bottom: 2px;
-    margin-bottom: 52px;
+    /* margin-bottom: 52px; */
     z-index: 2;
   }
 
@@ -385,9 +385,13 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    padding-top: 52px;
+    background-color: @white;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
+    padding-top: 0;
+    background-color: @grey-bg;
   }
 }
