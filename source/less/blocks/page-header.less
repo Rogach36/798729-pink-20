@@ -99,7 +99,7 @@
   }
 }
 
-.page-header__title {
+.page-header__title {/*сюда фон с улицей на псевдоэлемент для страниц с фото и формой*/
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -109,6 +109,33 @@
   padding-bottom: 76px;
   padding-top: /* 39px */ 27px;
 
+  /*пока закомментировал фон для двух других страниц*/
+  
+  /* @media (max-width: 659px) {
+    padding-top: 25px;
+    padding-bottom: 312px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 462px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  } */
+
   @media (min-width: @tablet-width) {
     width: 483px;
     font-size: 50px;
@@ -116,7 +143,7 @@
     padding-top: 64px;
     padding-bottom: 0;
   }
-
+  
   @media (min-width: @desktop-width) {
     width: 400px;
     /* margin-top: 60px; */
