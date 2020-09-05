@@ -229,9 +229,10 @@
         z-index: 0;
       }
 
-      /* @media (min-width: @desktop-width) {
-        top: -240px;
-      } */
+      @media (min-width: @desktop-width) {
+        /* top: -240px; */
+        background-image: url("../img/bg-back-desktop@1x.jpg");
+      }
     }
   }
 
@@ -300,7 +301,7 @@
         background-position: center top;
         background-repeat: no-repeat;
         /* background-size: cover; */
-        background-size: 180%;
+        background-size: /* 180% */156%;
         z-index: 0;
         min-height: 438px;
       }

@@ -30,7 +30,7 @@
     </style> -->
 </head>
 <body class="page-body">
-  <header class="page-header page-header--nav-closed page-header--form page-header--nav-nojs">
+  <header class="page-header page-header--nav-opened page-header--form page-header--nav-nojs">
     <div class="wrapper-nav-background">
       <div class="wrapper-nav page-header__wrapper-nav"><!-- page-header__wrapper-nav класс для сокрытия полоски с полупроз. фоном в откр. меню -->
         <nav class="main-nav"><!-- убрал container --> <!-- убрал main-nav--opened и заменил на page-header--nav-opened убрал main-nav--nojs -->
@@ -70,8 +70,8 @@
         </p>
       </div>
       <form class="user-info__form form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="user-info__form-wrapper">
-          <div class="container form__wrapper-name">
+        <div class="container user-info-flex"><!-- Контейнер и флекс -->
+          <div class="form__wrapper-name">
             <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--not">
               <p>
                 <label class="form__label form__label--name" for="sername">Фамилия:</label>
@@ -89,7 +89,7 @@
           </div>
           <!-- <div class="form__wrapper-order"> -->
             <div class="form__cover-grey form__wrapper-trip">
-              <div class="container">
+
                 <fieldset class="form__fieldset form__fieldset--adventure">
                   <legend class="form__legend form__legend-trip">Ваши безбашенные достижения в путешествии</legend>
                   <ul class="form__checklist">
@@ -131,9 +131,9 @@
                     </li>
                   </ul>
                 </fieldset><!-- чак норис -->
-              </div>
+
             </div><!-- путешествия -->
-            <div class="container form__wrapper-contact">
+            <div class="form__wrapper-contact">
               <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--contacts">
                 <legend class="form__legend form__legend-contact form__legend--not">Контактная информация</legend>
                 <div class="form__contact-grid">
@@ -149,7 +149,7 @@
               </fieldset><!-- контакты -->
             </div><!-- ваши контакты -->
             <div class="form__cover-grey form__wrapper-application">
-              <div class="container">
+
               <fieldset class="form__fieldset form__fieldset--bg-grey form__fieldset--app">
                     <legend class="form__legend form__legend-app">С каким приложением путешествовали?</legend>
                     <ul class="form__app-list">
@@ -173,19 +173,21 @@
                       </li>
                       </ul>
               </fieldset><!-- приложение -->
-              </div>
+
             </div><!-- приложения -->
-            <div class="container form__wrapper-emotion">
+            <div class="form__wrapper-emotion">
               <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--review">
                 <legend class="form__legend form__legend-emo">Опишите свои эмоции</legend>
                 <textarea class="form__field-message" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле для сообщения" id="message"></textarea>
                 <label class="form__label" for="message"></label>
               </fieldset><!-- отызв -->
+        <!-- </div> --><!-- Ранее закрыв тег флек-контейнера -->
               <div class="form__wrapper-send">
                 <button class="form__button form__button-send" type="submit">Отправить форму</button>
                 <p class="form__note"><span class="form__star">*</span> — Обязательные&nbsp;<span class="form__note-cover">для заполнения</span>&nbsp;поля</p>
               </div>
             </div><!-- ваши эмоции -->
+          </div>
           <!-- <div> -->
           <section class="form-popup form-popup--fail">
             <div class="container">
@@ -207,7 +209,7 @@
               <button class="form__button form__button--close" type="button">Закрыть окно</button>
             </div>
           </section>
-        </div>
+
       </form>
     </section>
   </main>

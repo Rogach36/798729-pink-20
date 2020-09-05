@@ -29,62 +29,74 @@
 }
 
 .form__wrapper-name {
-  @media (min-width: @desktop-width) {
+  /* @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
+  } */
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    order: 1;
   }
 }
 
 .form__wrapper-application {
-  @media (min-width: @tablet-width) {
-    order: 1;
+   @media (min-width: @tablet-width) {
+    /*order: 1; */
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+    width: 50%;
+    order: 2;
   }
 }
 
 .form__wrapper-contact {
   @media (min-width: @tablet-width) {
-    order: 2;
+    /* order: 2; */
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    width: 100%;
+    order: 3;
   }
 }
 
 .form__contact-grid {
   @media (min-width: @desktop-width) {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 105px;
-    column-gap: 12px;
+    column-gap: 12px; */
   }
 }
 
 .form__wrapper-trip {
   @media (min-width: @tablet-width) {
-    order: 3;
+    /* order: 3; */
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+   /*  grid-column-start: 1;
+    grid-column-end: 3; */
+    width: 100%;
+    order: 4;
   }
 }
 
 .form__wrapper-emotion {
   @media (min-width: @tablet-width) {
-    order: 4;
+    /* order: 4; */
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    width: 100%;
+    order: 5;
   }
 }
 
@@ -96,8 +108,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
   }
 }
 
@@ -474,6 +486,10 @@
   @media (min-width: @tablet-width) {
     background-color: @white;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
 }
 
 .form__selection-item {
@@ -536,7 +552,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -32px;
+    /* margin-left: -32px; */
   }
 }
 

@@ -28,28 +28,38 @@
   }
 }
 
-.user-info__form-wrapper {
+.user-info-flex {
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    box-sizing: border-box;
+  }
+}
+
+/* .user-info__form-wrapper {Обертка для грида и центровки
   display: block;
-  max-width: /* 100% */940px;
+  max-width: 940px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    /* width: 620px; */
+
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: /* 432px 458px */ 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 297px 158px 228px 213px 88px;
-    column-gap: /* 52px */ 35px;
+    column-gap: 35px;
     row-gap: 69px;
-    max-width: 960px; /* 940 */
+    max-width: 960px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
   }
-}
+} */
 
 /* .form__wrapper-name {
   grid-column-start: 1;
