@@ -37,6 +37,10 @@
 .slider {
   position: relative;
 
+  @media (min-width: 660px) {
+    margin-bottom: 12px;
+  }
+
   @media (min-width: @desktop-width) {
     &::after {
       content: "";
@@ -45,14 +49,11 @@
       height: 64px;
       top: -111px;
       left: 431px;
+      margin-bottom: 0;
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
     }
-  }
-
-  @media (min-width: 660px) {
-    margin-bottom: -6px;
   }
 }
 
@@ -61,7 +62,7 @@
   text-align: center;
   width: 90px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   display: flex;
 
 

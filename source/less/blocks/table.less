@@ -15,6 +15,13 @@
   }
 }
 
+.table .table__row {
+  @media (min-width: @tablet-width) {
+    /* height: 47px; */
+  }
+}
+
+
 .table__name-price {
   position: relative;
   color: @white;
@@ -26,19 +33,69 @@
   text-transform: uppercase;
 
   @media (min-width: @mobile-width-only) {
-    height: 25px;
-    padding-top: 17px;
-    left: -2px;
+    padding-top: 0;
+    padding-top: 5px;
     line-height: 20px;
     box-sizing: border-box;
-    padding-left: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 19px;
+    /* padding-bottom: 12px; */
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 19px;
     left: 1px;
-    letter-spacing: 1.2px;
-    padding-right: 5px;
+    letter-spacing: 1.5px;
+    /* padding-right: 5px; */
+  }
+}
+
+.table__name-price--hit {
+  /* min-width: 280px; */
+}
+
+.table__name-price--hit::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/hit-ribbon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 15;
+
+  @media (min-width: @tablet-width) {
+    background-position: 0 -11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-position: 0 -5px;
+  }
+}
+
+.table__name-price--hit::after {
+  content: "Хит";
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  transform: rotate(-45deg);
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  z-index: 15;
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+    left: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 16px;
+    left: 13px;
   }
 }
 
@@ -53,23 +110,24 @@
 
   @media (min-width: @mobile-width-only) {
     position: relative;
-    left: -2px;
-    height: 27px;
+    /* height: 27px; */
     line-height: 20px;
     padding-bottom: 28px;
-    padding-left: 6px;
-    padding-top: 6px;
+    padding-bottom: 34px;
+    bottom: 5px;
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 15px;
+    padding-bottom: 19px;
+    bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 24px;
     line-height: 30px;
-    padding-bottom: 23px;
-    padding-left: 3px;
+    padding-bottom: 22px;
+    padding-top: 4px;
+    padding-left: 1px;
     left: 1px;
   }
 }
@@ -89,6 +147,7 @@ td,
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
     width: 159px;
@@ -129,31 +188,55 @@ td,
   background-position: center center;
 }
 
-.table__name-price--hit {
-  /* min-width: 280px; */
-}
+/*Таблица на мобильной версии*/
 
-.table__name-price--hit::before {
-  content: "";
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  top: 0;
-  left: 0;
-  background-image: url("../img/hit-ribbon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 15;
-}
+@media (max-width: 659px) {
+  .rate__wrapper {
+    position: relative;
+    min-height: 290px;
+    overflow: hidden;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
 
-.table__name-price--hit::after {
-  content: "Хит";
-  position: absolute;
-  top: 18px;
-  left: 14px;
-  transform: rotate(-45deg);
-  font-weight: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  z-index: 15;
+  .table {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .table td,
+  .table th {
+    width: 280px;
+    min-width: 280px;
+    box-sizing: border-box;
+  }
+
+  .table tr {
+    position: relative;
+    height: 59px;
+  }
+
+  table .table__row {
+    height: 47px;
+  }
+
+  .table__head {
+    position: absolute;
+    height: 59px;
+    left: 50%;
+    padding-left: 20px;
+    transform: translateX(-50%);
+    text-align: left;
+    z-index: 1;
+    background-color: transparent;
+  }
+
+  .table__feature {
+    position: relative;
+    background-position-x: 230px;
+    background-position-y: 14px;
+  }
 }
