@@ -71,8 +71,8 @@
       </div>
       <form class="user-info__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="container user-info-flex"><!-- Контейнер и флекс -->
-          <div class="form__wrapper-name">
-            <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--not">
+          <!-- <div class="form__wrapper-name"> -->
+            <fieldset class="form__fieldset form__fieldset--name">
               <p>
                 <label class="form__label form__label--name" for="sername">Фамилия:</label>
                 <input class="form__input form__input--sername" type="text" name="sername" placeholder="Укажите фамилию *" id="sername">
@@ -86,9 +86,9 @@
                   <input class="form__input form__input--patroname" type="text" name="name" placeholder="Ну и отчество тоже" id="middlename">
                 </p>
             </fieldset><!-- имя -->
-          </div>
+          <!-- </div> -->
           <!-- <div class="form__wrapper-order"> -->
-            <div class="form__cover-grey form__wrapper-trip">
+            <!-- <div class="form__wrapper-trip"> --><!-- Удалил form__cover-grey  -->
 
                 <fieldset class="form__fieldset form__fieldset--adventure">
                   <legend class="form__legend form__legend-trip">Ваши безбашенные достижения в путешествии</legend>
@@ -132,25 +132,25 @@
                   </ul>
                 </fieldset><!-- чак норис -->
 
-            </div><!-- путешествия -->
-            <div class="form__wrapper-contact">
+            <!-- </div> --><!-- путешествия -->
+            <!-- <div class="form__wrapper-contact"> -->
               <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--contacts">
-                <legend class="form__legend form__legend-contact form__legend--not">Контактная информация</legend>
-                <div class="form__contact-grid">
+               <!--  <legend class="form__legend form__legend-contact form__legend--not">Контактная информация</legend> -->
+                <!-- <div class="form__contact-grid"> -->
                   <div class="form__fieldset-cover form__fieldset-cover1">
                     <input class="form__input form__input-user" type="tel" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Поле номера телефона" id="phone">
                     <label class="form__label form__label-user form__label-user--1" for="phone">Номер телефона</label>
                   </div>
-                <div class="form__fieldset-cover">
+                <div class="form__fieldset-cover form__fieldset-cover2">
                   <input class="form__input form__input-user form__input-user--2" type="email" name="email" placeholder="Введите почту *" aria-label="Поле для email" id="email">
                   <label class="form__label form__label-user form__label-user--2" for="email">Адрес почты</label>
                 </div>
-              </div>
+              <!-- </div> -->
               </fieldset><!-- контакты -->
-            </div><!-- ваши контакты -->
-            <div class="form__cover-grey form__wrapper-application">
+            <!-- </div> --><!-- ваши контакты -->
+            <!-- <div class="form__wrapper-application"> --><!-- Удалил form__cover-grey -->
 
-              <fieldset class="form__fieldset form__fieldset--bg-grey form__fieldset--app">
+              <fieldset class="form__fieldset form__fieldset--app">
                     <legend class="form__legend form__legend-app">С каким приложением путешествовали?</legend>
                     <ul class="form__app-list">
                       <li class="form__selection-item">
@@ -174,19 +174,19 @@
                       </ul>
               </fieldset><!-- приложение -->
 
-            </div><!-- приложения -->
-            <div class="form__wrapper-emotion">
-              <fieldset class="form__fieldset form__fieldset--bg-white form__fieldset--review">
+            <!-- </div> --><!-- приложения -->
+            <!-- <div class="form__wrapper-emotion"> -->
+              <fieldset class="form__fieldset form__fieldset--review">
                 <legend class="form__legend form__legend-emo">Опишите свои эмоции</legend>
                 <textarea class="form__field-message" name="letter" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Поле для сообщения" id="message"></textarea>
                 <label class="form__label" for="message"></label>
               </fieldset><!-- отызв -->
-        <!-- </div> --><!-- Ранее закрыв тег флек-контейнера -->
+              <!-- </div> --><!-- Ранее закрыв тег флек-контейнера -->
               <div class="form__wrapper-send">
                 <button class="form__button form__button-send" type="submit">Отправить форму</button>
                 <p class="form__note"><span class="form__star">*</span> — Обязательные&nbsp;<span class="form__note-cover">для заполнения</span>&nbsp;поля</p>
               </div>
-            </div><!-- ваши эмоции -->
+            <!-- </div> --><!-- ваши эмоции -->
           </div>
           <!-- <div> -->
           <section class="form-popup form-popup--fail">

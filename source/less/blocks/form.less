@@ -19,6 +19,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+
+  @media (min-width: @desktop-width) {
+    /* width: 433px; */
+  }
 }
 
 .form__wrapper-order {
@@ -28,42 +32,17 @@
   }
 }
 
-.form__wrapper-name {
+/* .form__wrapper-name { ОБЕРТКА для поля с фио!!!*/
   /* @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
   } */
-  @media (min-width: @desktop-width) {
+ /*  @media (min-width: @desktop-width) {
     width: 50%;
     order: 1;
   }
 }
-
-.form__wrapper-application {
-   @media (min-width: @tablet-width) {
-    /*order: 1; */
-  }
-
-  @media (min-width: @desktop-width) {
-    /* grid-column-start: 2;
-    grid-column-end: 3; */
-    width: 50%;
-    order: 2;
-  }
-}
-
-.form__wrapper-contact {
-  @media (min-width: @tablet-width) {
-    /* order: 2; */
-  }
-
-  @media (min-width: @desktop-width) {
-    /* grid-column-start: 1;
-    grid-column-end: 3; */
-    width: 100%;
-    order: 3;
-  }
-}
+ */
 
 .form__contact-grid {
   @media (min-width: @desktop-width) {
@@ -74,7 +53,7 @@
   }
 }
 
-.form__wrapper-trip {
+.form__fieldset--adventure /* form__wrapper-trip */ {
   @media (min-width: @tablet-width) {
     /* order: 3; */
   }
@@ -87,7 +66,7 @@
   }
 }
 
-.form__wrapper-emotion {
+.form__fieldset--review /* form__wrapper-emotion */ {
   @media (min-width: @tablet-width) {
     /* order: 4; */
   }
@@ -110,15 +89,24 @@
   @media (min-width: @desktop-width) {
     /* grid-column-start: 1;
     grid-column-end: 3; */
+    width: 100%;
+    order: 6;
   }
 }
 
-.form__fieldset--not {
+.form__fieldset--name {
   border: transparent;
   margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 29px;
+    width: 50%;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    order: 1;
   }
 }
 
@@ -132,7 +120,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -19px;
+    /* margin-left: -19px; */
   }
 }
 
@@ -148,6 +136,10 @@
     flex-wrap: wrap;
     /* width: 400px; */
   }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+  }
 }
 
 .form__fieldset-cover1 {
@@ -157,6 +149,20 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form__fieldset-cover2 {
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -250,27 +256,39 @@
   }
 }
 
-.form__fieldset--contacts {
+.form__fieldset--contacts /* form__wrapper-contact */ {
   margin-bottom: 33px;
-
   @media (min-width: @tablet-width) {
+    /* order: 2; */
     margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -20px;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    width: 100%;
+    order: 3;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.form__fieldset--app {
+
+.form__fieldset--app /* form__wrapper-application */ {
   @media (min-width: @tablet-width) {
-    margin-bottom: 51px;
-  }
+   /*order: 1; */
+   margin-bottom: 51px;
+ }
 
-  @media (min-width: @desktop-width) {
-    width: 435px;
-  }
+ @media (min-width: @desktop-width) {
+   /* grid-column-start: 2;
+   grid-column-end: 3; */
+   width: 46%;
+   order: 2;
+   margin-left: 31px;
+ }
 }
+
 
 .form__fieldset--review {
   @media (min-width: @tablet-width) {
@@ -279,7 +297,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: -20px;
+    /* margin-left: -20px; */
   }
 }
 
@@ -404,6 +422,10 @@
     padding: 15px 0;
     padding-left: 21px;
   }
+
+  /* @media (min-width: @desktop-width) {
+    padding-left: 6px;
+  } */
 }
 
 .form__input--sername {
@@ -541,18 +563,19 @@
 }
 
 .form__label--name {
-  margin-left: 10px;
-  /* margin-right: 18px; */
+  /* margin-left: 10px;
+  /* margin-right: 18 */
   /* margin-top: 18px; */
 
   @media (min-width: @tablet-width) {
     margin-right: 18px;
     margin-top: 18px;
-    margin-left: -13px;
+    /* margin-left: -13px; */
   }
 
   @media (min-width: @desktop-width) {
-    /* margin-left: -32px; */
+    margin-left: -13px;
+    margin-right: 19px;
   }
 }
 
