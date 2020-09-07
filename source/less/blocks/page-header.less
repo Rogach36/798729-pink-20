@@ -18,9 +18,9 @@
 
 .page-header--foto,
 .page-header--form {
-  @media (min-width: @tablet-width) {
+  /* @media (min-width: @tablet-width) {
     margin-bottom: 147px;   
-  }
+  } */
 
   @media (min-width: @desktop-width) {
     min-height: 394px;
@@ -75,8 +75,18 @@
 } */
 
 .page-header--form {
+  @media (max-width: 659px) {
+    margin-bottom: 45px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 91px;
+  }
+}
+
+.page-header--foto {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 163px;   
   }
 }
 
@@ -123,21 +133,12 @@
   }
 }
 
-.page-header__title {/*сюда фон с улицей на псевдоэлемент для страниц с фото и формой*/
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  /* width: 231px; */
-  padding-bottom: 76px;
-  padding-top: 36px;
-  text-align: center;
-
-  /*пока закомментировал фон для двух других страниц*/
+.page-header__title-wrapper-back {
   @media (max-width: 659px) {
     padding-left: 8px;
     padding-right: 8px;
-    padding-top: 28px;
-    padding-bottom: 76px;
+    padding-top: 12px;
+    padding-bottom: /* 60px */ 27px;
     margin: 0;
     position: relative;
     z-index: 1;
@@ -160,6 +161,45 @@
       z-index: -1;
     }
   }
+}
+
+.page-header__title {/*сюда фон с улицей на псевдоэлемент для страниц с фото и формой*/
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* width: 231px; */
+  padding-bottom: /* 76px */ 0;
+  padding-top: /* 36px */ 0;
+  text-align: center;
+
+  /*пока закомментировал фон для двух других страниц*/
+/*   @media (max-width: 659px) {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 28px;
+    padding-bottom: 76px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: /* 462px */ /* 242px; */
+     /* left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  } */
 
   @media (min-width: @tablet-width) {
     width: 483px;
@@ -191,19 +231,21 @@
     }
   } */
 
-/* .page-header__title--foto {
-  @media (min-width: @desktop-width) {
-    width: 400px;
-    margin-top: 60px;
+ .page-header__title--foto {
+  @media (max-width: 659px) {
+    padding-bottom: 33px;
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
   }
-} */
+} 
 
 .page-header__title--form {
   @media (max-width: 659px) {
-    padding-bottom: 43px;
-    padding-top: 27px;
-    margin-bottom: 45px;
-  }
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
 
   @media (min-width: @desktop-width) {
     width: 760px;

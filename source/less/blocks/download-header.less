@@ -51,7 +51,7 @@
  */
   @media (min-width: @tablet-width) {
     background-image: none;
-    min-height: 614px;
+    min-height: 617px;
     margin-bottom: 47px;
     padding-top: /* 94px */1px;
 
@@ -88,14 +88,50 @@
   }
 }
 
+.download-header__wrapper-bg-back {
+  @media (max-width: 659px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: /* 25px */ 22px;
+    /* padding-bottom: 312px; */
+    padding-bottom: 291px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 462px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}
+
+
 .download-header__slogan {
+  width: 272px;
+  
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  margin-top: 80px;
+  /* margin-top: 80px; */  
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 24px;
   text-align: center;
 
-  @media (max-width: 659px) {
+  /* @media (max-width: 659px) {
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
@@ -120,14 +156,14 @@
       background-size: cover;
       z-index: -1;
     }
-  }
+  } */
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     width: 200px;
     margin-bottom: 28px;
     margin-left: 49px;
-    padding-top: 11px;
+    padding-top: 92px;
   }
 
   @media (min-width: @desktop-width) {
