@@ -438,6 +438,15 @@
   /* @media (min-width: @desktop-width) {
     padding-left: 6px;
   } */
+
+  &:hover {
+    border-color: @text-page;
+  }
+
+  &:active {
+    /* border-color: @pink; */
+    border: 2px solid #d22856;
+  }
 }
 
 .form__input--sername {
@@ -794,6 +803,10 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }
 
