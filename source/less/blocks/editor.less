@@ -1,11 +1,15 @@
 .editor {
   background-color: @grey-bg;
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+  }
 }
 
 .editor__photo-call {
   background-color: @white;
   line-height: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
@@ -18,26 +22,57 @@
 
 .editor__pic {
   padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -42px;
+  }
 }
 
 .editor__slogan-do-it {
   line-height: 30px;
   width: 270px;
   text-align: center;
+  margin-top: 47px;
+  margin-left: 5px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     width: 425px;
     margin: 0 auto;
+    margin-top: 63px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    margin-bottom: -28px;
+  }
+}
+
+.editor__panel {
+  @media (max-width: 659px) {
+    padding-bottom: 1px;
   }
 }
 
 .editor__panel-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+    padding-bottom: /* 52px */ 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 16px;
+    padding-top: 37px;
+    background-color: @grey-bg;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+  }
+}
+
+.editor__photo-change {
+  margin-bottom: -7px;
+  display: block;
 }

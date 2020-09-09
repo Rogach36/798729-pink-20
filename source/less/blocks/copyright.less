@@ -1,33 +1,56 @@
 .copyright {
-  background-image: url("../img/logo-htmlacademy.svg");
+  /* background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
-  background-position: 115px -5px;
+  background-position: 102px 0;
   cursor: pointer;
-
-  &:hover {
+ */
+  /*  &:hover {
     background-image: url("../img/logo-htmlacademy-grey1.svg");
-    background-repeat: no-repeat;
-    background-position: 115px -5px;
   }
 
   &:active {
     background-image: url("../img/logo-htmlacademy-grey2.svg");
-    background-repeat: no-repeat;
-    background-position: 115px -5px;
+  }
+ */
+  @media (max-width: 659px) {
+    position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    /* background-position: 128px 0; */
+    /* width: 165px; */
+    /* position: static; */
+    margin-top: 80px;
+    /* margin-left: 153px; */
+    /* left: 0; */
+    margin-right: 0;
+    display: flex;
   }
 }
 
 .copyright__text {
   line-height: 18px;
+  font-weight: normal;
+  padding-top: 8px;
+  /* margin-left: -1px; */
 
   @media (min-width: @tablet-width) {
-    width: 88px;
-    margin-right: 15px;
+    /* width: 88px; */
+    margin-left: 19px;
+    /* margin-right: 0px; */
+    padding-top: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 123px;
-    margin-right: 15px;
+    /* width: 123px; */
+    font-size: 18px;
+    padding-top: 5px;
+    margin-left: 0;
   }
 }
 
@@ -35,8 +58,26 @@
   display: block;
   width: 27px;
   height: 34px;
+  margin-left: 16px;
+  /* background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat; */
+  /* background-position: 102px 0; */
+  cursor: pointer;
+
 
   @media (min-width: @tablet-width) {
-    margin-left: 25px;
+    margin-left: 17px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 13px;
+  }
+}
+
+.copyright__link:hover .copyright__link-icon {
+  fill: #283645;
+}
+
+.copyright__link:active .copyright__link-icon {
+  fill: rgba(40, 54, 69, 0.3);
 }

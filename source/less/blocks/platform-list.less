@@ -1,23 +1,29 @@
 .platform-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 45px;
-  margin-bottom: 34px;
-  width: 208px;
-
+  /* margin-top: 45px; */
+  /* margin-bottom: 20px; */
+  width: 262px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 45px;
     margin-bottom: 36px;
+    position: relative;
+    z-index: 6;
+    left: 4px;
+    top: 3px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 300px;
-    margin-top: 60px;
-    margin-bottom: 47px;
+    position: static;
+    width: 265px;
+    margin-top: 78px;
+    margin-bottom: 52px;
+    padding-left: 6px;
   }
 }
 
@@ -27,6 +33,15 @@
   background-image: url("../img/logo-apple.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  margin-left: 22px;
+  margin-top: -12px;
+
+  @media (max-width: 659px) {
+    position: relative;
+    margin: 0;
+    bottom: 7px;
+    left: 9px;
+  }
 }
 
 .platform-list__item--android {
@@ -35,6 +50,11 @@
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  margin-top: -7px;
+
+  @media (max-width: 659px) {
+    margin-top: 0;
+  }
 }
 
 .platform-list__item--microsoft {
@@ -43,4 +63,12 @@
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  margin-top: -1px;
+
+  @media (max-width: 659px) {
+    position: relative;
+    margin: 0;
+    top: 4px;
+    right: 8px;
+  }
 }

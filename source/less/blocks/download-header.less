@@ -1,27 +1,59 @@
+.container--download-header {
+  @media (max-width: 659px) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.wrapper-bg-index {
+  /*   @media (max-width: 659px) {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: center -80px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 72%;
+    background-size: contain;
+  } */
+
+  /*@media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -111px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 72%;
+    min-height: 617px;
+    margin-bottom: 49px;
+  }
+ */
+  /*  @media (min-width: @desktop-width) {
+    background-image: none;
+  } */
+}
+
+
 .download-header {
   position: relative;
 
-  @media (min-width: @mobile-width-only) {
-    /* background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-position: 0 97px;
-    background-repeat: no-repeat; */
-
+  /* @media (min-width: @mobile-width-only) {
     &::before {
       position: absolute;
+      z-index: 6;
       content: "";
       display: block;
       width: 258px;
       height: 286px;
-      top: 97px;
-      left: -20px;
-      background-image: url("../img/iphone-hand-mobile@1x.png");
+      top: 110px; */
+    /*left: -20px; */
+    /*background-image: url("../img/iphone-hand-mobile@1x.png");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
   }
-
+ */
   @media (min-width: @tablet-width) {
     background-image: none;
+    min-height: 617px;
+    margin-bottom: 47px;
+    padding-top: /* 94px */1px;
 
     &::before {
       position: absolute;
@@ -29,17 +61,18 @@
       display: block;
       width: 470px;
       height: 545px;
-      bottom: 0;
-      right: -20px;
-      top: auto;
-      left: auto;
       background-image: url("../img/iphone-hand-tabletM1x.png");
-      background-position: 0 0;
+      background-position: center center;
+      right: 21px;
+      bottom: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
     background-image: none;
+    /* margin-top: 131px; */ /* стиль для полупрозрачного фона */
+    padding-top: 10px;
+    min-height: /* 735px */742px;
 
     &::before {
       position: absolute;
@@ -47,53 +80,145 @@
       display: block;
       width: 592px;
       height: 645px;
-      top: -76px;
-      right: 0;
+      bottom: 0;
+      right: 11px;
       background-image: url("../img/iphone-hand-desktopM1x.png");
       background-position: 0 0;
     }
   }
 }
 
+.download-header__wrapper-bg-back {
+  @media (max-width: 659px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: /* 25px */ 22px;
+    /* padding-bottom: 312px; */
+    padding-bottom: 291px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 462px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}
+
+
 .download-header__slogan {
+  width: 272px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  width: 300px;
-  margin-bottom: 350px;
+  /* margin-top: 80px; */
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 24px;
   text-align: center;
+
+  /* @media (max-width: 659px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 312px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 462px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  } */
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     width: 200px;
-    margin-bottom: 36px;
-    margin-left: 58px;
+    margin-bottom: 28px;
+    margin-left: 49px;
+    padding-top: 92px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 215px;
-    margin-bottom: 45px;
+    width: 237px;
+    margin-bottom: 35px;
+    margin-left: 31px;
     font-size: 50px;
     line-height: 68px;
   }
 }
 
+.download-header__wrapper-bottom {
+  @media (max-width: 659px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 41px;
+    width: 320px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      z-index: 6;
+      content: "";
+      display: block;
+      width: 258px;
+      height: 286px;
+      bottom: 100%;
+      left: 0;
+      background-image: url("../img/iphone-hand-mobile@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .download-header__btn {
   display: block;
-  width: 280px;
-  padding-top: 20px;
-  padding-bottom: 19px;
+  width: 278px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: /* 20px */38px;
   color: @white;
   border: 3px solid #ffffff;
   border-radius: 30px;
   outline: none;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 6;
+  box-sizing: border-box;
 
   &:hover {
     background-color: #ffffff;
@@ -105,8 +230,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 300px;
-    margin-bottom: 51px;
+    width: 297px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: @desktop-width) {
@@ -118,18 +243,19 @@
 .download-header__info {
   font-weight: 300;
   width: 280px;
-  position: relative;
-  z-index: 2;
-  padding-bottom: 30px;
   text-align: center;
+  margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 6;
     font-size: 18px;
     width: 300px;
     margin-bottom: 119px;
   }
 
   @media (min-width: @desktop-width) {
+    position: static;
     font-size: 18px;
     width: 300px;
     margin-bottom: 130px;

@@ -1,134 +1,407 @@
 .page-header {
   width: 100%;
-  min-height: 540px;
   background-color: @menu-bg;
   color: @white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 290px;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    min-height: 680px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 340px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 395px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center top;
-  }
+  background-repeat: no-repeat, no-repeat;
 }
 
+/* расскомментировать .page-header--index  */
+
 .page-header--index {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center center;
-  background-repeat: no-repeat, no-repeat;
-
-  @media (min-width: @tablet-width) {
-    min-height: 545px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 320px;
-  }
-
   @media (min-width: @desktop-width) {
     min-height: 853px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: top center;
+    background-repeat: no-repeat, no-repeat;
   }
 }
+
+.page-header--foto,
+.page-header--form {
+  /* @media (min-width: @tablet-width) {
+    margin-bottom: 147px;
+  } */
+
+  @media (min-width: @desktop-width) {
+    min-height: 394px;
+    margin-bottom: 0;
+    /*перевешиваем фон с псевдо на хедер*/
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat, no-repeat;
+
+    /* min-height: 394px;
+    top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 267%; */
+  }
+}
+
+/* .page-header--foto,
+.page-header--form { */
+/* сюда фон для десктопа фото и формы*/
+/*  @media (min-width: @desktop-width) {
+    min-height: 394px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center 40%;
+    margin-bottom: 88px;
+    background-size: 265%;
+    background-repeat: no-repeat, no-repeat;
+  }
+} */
+
+/* НОВЫЙ КОНТЕЙНЕР ДЛЯ ФОНОВ. ИЗОБРАЖ. */
+/* .wrapper-bg-foto,
+.wrapper-bg-form {
+  @media (max-width: 959px) {
+    min-height: 331px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -110px;
+    margin-bottom: 88px;
+    background-size: 183%;
+  }
+
+  @media (max-width: 659px) {
+    min-height: 165px;
+    background-color: @menu-bg;
+    color: @white;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: center -66px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 44px;
+  }
+} */
 
 .page-header--form {
-  min-height: 540px;
-  background-color: @menu-bg;
-  color: @white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 290px;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    min-height: 740px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 340px;
-    margin-bottom: 100px;
+  @media (max-width: 659px) {
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 480px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center top;
-    margin-bottom: 90px;
+    margin-bottom: 91px;
   }
 }
 
-.page-header__title {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  width: 231px;
-  text-align: center;
-  margin: 0 auto;
-
+.page-header--foto {
   @media (min-width: @tablet-width) {
-    width: 483px;
-    font-size: 50px;
-    line-height: 68px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 750px;
-  }
-}
-
-.users-photo__appeal {
-  line-height: 30px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
+    margin-bottom: 163px;
   }
 }
 
 .page-header__logo {
   display: block;
   width: 78px;
-  height: 69px;
-  background-color: rgba(0, 0, 0, 0.3);
-  /* background-image: url("../img/logo-pink-white-mobile.svg"); */
+  height: 49px;
+  padding-top: 20px;
+  margin-bottom: 0;
   background-position: 0 0;
   background-repeat: no-repeat;
-  margin-left: 20px;
+  box-sizing: border-box;
+
 
   @media (min-width: @tablet-width) {
-    width: 152px;
-    height: 109px;
-    /* background-image: url("../img/logo-pink-white-tablet.svg"); */
+    width: 146px;
+    height: 91px;
+    padding-top: 27px;
+    /* margin-top: 7px;
+    margin-bottom: -9px; */
   }
 
   @media (min-width: @desktop-width) {
-    width: 187px;
-    height: 110px;
-    padding-left: 10px;
-    /* background-image: url("../img/logo-pink-white-desktop.svg"); */
+    width: 160px /*150px*/;
+    padding: 0;
+    height: auto;
+    display: block;
   }
 }
 
-// .page-header__logo img {
-//   @media (min-width: @desktop-width) {
-//     display: none;
-//   }
-// }
+.page-header__logo img {
+  width: 74px;
+  height: 23px;
 
-// .page-header__logo img {
-//   width: 74px;
-//   height: 23px;
-// }
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+    display: block;
+  }
 
-// @media (min-width: @tablet-width) {
-//   .main-nav__list a {
-//     color: green;
-//   }
-// }
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.page-header__title-wrapper-back {
+  @media (max-width: 659px) {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: /* 60px */ 27px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: /* 462px */ 242px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}
+
+.page-header__title {/*сюда фон с улицей на псевдоэлемент для страниц с фото и формой*/
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  /* width: 231px; */
+  padding-bottom: /* 76px */ 0;
+  padding-top: /* 36px */ 0;
+  text-align: center;
+
+  /*пока закомментировал фон для двух других страниц*/
+/*   @media (max-width: 659px) {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 28px;
+    padding-bottom: 76px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: /* 462px */ /* 242px; */
+      /* left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  } */
+
+  @media (min-width: @tablet-width) {
+    width: 483px;
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 64px;
+    padding-bottom: 61px;
+    margin: 0 auto;
+    margin-bottom: 91px;
+    z-index: 2;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding-top: 0;
+    padding-top: 60px;
+  }
+}
+
+.page-header__title--foto {
+  @media (max-width: 659px) {
+    padding-bottom: 33px;
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.page-header__title--form {
+  @media (max-width: 659px) {
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: @desktop-width) {
+    width: 760px;
+  }
+}
+
+.move-word-4 {
+  display: inline-block;
+  width: 1px;
+}
+
+/* Стили для фонов при открытом или закрытом меню */
+/* ГЛАВНАЯ СТРАНИЦА */
+
+.page-header-index--nav-opened {
+  .page-header__nav {
+    @media (max-width: 959px) {
+      display: block;
+    }
+  }
+
+  .page-header__wrapper-bg-index {
+    position: relative;
+
+    &::before {
+      @media (min-width: @tablet-width) {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -110px;
+        bottom: 0;
+        right: 0;
+        background-image: url("../img/bg-back-tablet@1x.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+      }
+
+      @media (min-width: @desktop-width) {
+        background-image: none;
+      }
+    }
+  }
+
+  .page-header__wrapper-nav {
+    @media (max-width: 959px) {
+      background: none;
+    }
+  }
+}
+
+.page-header-index--nav-closed {/* фон c улицей для моб. версии перенести отюсда на download-header__slogan*/
+  /* @media (max-width: 659px) {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 59%;
+    min-height: 462px;
+  } */
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page-header__nav {
+    @media (max-width: 959px) {
+      display: none;
+    }
+  }
+
+  .page-header__wrapper-bg-index {
+    /* background-color: #fff; */
+  }
+}
+
+/* Страница С ФОТО */
+
+.page-header--nav-opened {
+  .page-header__nav {
+    @media (max-width: 959px) {
+      display: block;
+    }
+  }
+
+  .page-header__wrapper-bg {
+    position: relative;
+
+    &::before {
+      @media (min-width: @tablet-width) {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -110px;
+        right: 0;
+        background-image: url("../img/bg-back-tablet@1x.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        background-size: /* 180% */156%;
+        z-index: 0;
+        min-height: 438px;
+      }
+
+      @media (min-width: @desktop-width) {
+        /* min-height: 394px;
+        top: -110px;
+        background-image: url("../img/bg-back-desktop@1x.jpg");
+        background-size: 267%; */
+
+        background-image: none;
+      }
+    }
+  }
+
+  .page-header__wrapper-nav {
+    @media (max-width: 959px) {
+      background: none;
+    }
+  }
+}
+
+.page-header--nav-closed {
+  @media (max-width: 659px) {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 237px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 180%;
+    min-height: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: /* 188% */ 267%;
+    min-height: 394px;
+  }
+
+  .page-header__nav {
+    @media (max-width: 959px) {
+      display: none;
+    }
+  }
+
+  .page-header__wrapper-bg {
+    /* background-color: #fff; */
+  }
+}

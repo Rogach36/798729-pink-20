@@ -14,9 +14,34 @@
 }
 
 .setting__wrapper {
+  padding-bottom: 1px;
+
+  @media (max-width: 659px) {
+    margin-bottom: 64px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    width: 275px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 88px;
+  }
+}
+
+.setting__range-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    margin-top: -26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -26px;
   }
 }
 
@@ -24,6 +49,34 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 659px) {
+    margin-left: 34px;
+    margin-bottom: /* 21px */15px;
+    width: 208px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    max-width: 40px;
+    margin-top: -42px;
+    margin-bottom: 37px;
+    margin-left: -6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -45px;
+    margin-left: -3px;
+  }
+}
+
+.setting__btn-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .setting__btn {
@@ -32,6 +85,14 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .setting__btn--crop {
@@ -40,16 +101,25 @@
 
 .setting__btn--fill {
   background-image: url("../img/icon-editor-fill.svg");
+
+  @media (min-width: @desktop-width) {
+    margin-left: 3px;
+  }
 }
 
 .setting__btn--light {
   background-image: url("../img/icon-editor-contrast.svg");
+
+  @media (min-width: @desktop-width) {
+    margin-left: 7px;
+  }
 }
 
 .setting__submit-btn {
   display: block;
   width: 280px;
-  padding: 21px;
+  /* padding: 21px; */
+  padding: 15px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -58,10 +128,18 @@
   align-items: center;
   border-radius: 30px;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+    width: 263px;
+  }
 }
 
 .setting__submit-btn--publish {
   border: 3px solid @pink;
+
+  @media (max-width: 659px) {
+    margin-bottom: 12px;
+  }
 
   &:hover {
     background-color: @pink;
@@ -72,14 +150,25 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-right: 43px;
+    margin-left: -1px;
+    margin-bottom: 0;
   }
 }
 
 .setting__submit-btn--cancel {
   border: 3px solid  rgba(40, 54, 69, 0.1);
   color: rgba(40, 54, 69, 0.1);
+
+  @media (max-width: 659px) {
+    margin-bottom: 46px;
+  }
 
   &:hover {
     border: 3px solid rgba(40, 54, 69, 0.3);
@@ -96,15 +185,86 @@
   }
 }
 
+.setting__range {
+  /* -webkit-appearance: none; */
+  width: 240px;
+  appearance: none;
+  outline: none;
 
-/* display: block;
-    width: 280px;
-    padding: 21px 90px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    color: #d22856;
-    align-items: center;
-    border-radius: 30px;
-    outline: none; */
+  @media (min-width: @tablet-width) {
+    width: 221px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 308px;
+  }
+}
+
+.setting__range::-webkit-slider-runnable-track {
+  height: 2px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: #283645;
+
+  @media (min-width: @desktop-width) {
+    /* margin-bottom: 41px; */
+  }
+}
+
+input[type="range"] {
+  @media (max-width: 659px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+    margin-left: 31px;
+  }
+}
+
+/* .setting__range::-moz-range-thumb {
+  height: 2px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: #283645;
+} */
+
+.setting__range::-webkit-slider-thumb {
+  appearance: none; /*без него ползунки теряют стилизацию*/
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -7px;
+
+  &:active {
+    background-color: @pink;
+  }
+}
+
+.setting__range::-moz-range-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  background: #ffffff;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: @pink;
+  }
+}
+
+input[type="range"]:nth-child(2),
+input[type="range"]:nth-child(3) {
+  @media (max-width: 659px) {
+    display: none;
+  }
+}

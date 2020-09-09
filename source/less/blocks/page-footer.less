@@ -1,5 +1,43 @@
+.footer-wrapper {
+  /* background-color: yellow; */ /* временный фон, убрать */
+
+  @media (min-width: @mobile-width-only) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    /* flex-shrink: 0; */
+    /* justify-content: space-around; */
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    /* padding-top: 36px;
+    padding-bottom: 0; */
+  }
+}
+
+.footer-wrapper--form {
+  @media (min-width: @desktop-width) {
+    margin-top: 0 /*22px*/;
+  }
+}
+
 .page-footer {
   background-color: @white;
+}
+
+.page-footer__contacts {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
 }
 
 .page-footer__logo {
@@ -10,12 +48,17 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-right: 34px;
-    margin-top: 37px;
+    /* width: 145px;
+    height: 40px; */
+    margin-right: 0;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 233px;
+    /* margin-right: 233px; */
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 38px;
   }
 }
 
@@ -24,16 +67,48 @@
   opacity: 0.3;
 }
 
+.page-footer__logo img {
+  margin-top: 33px;
+  margin-left: 25px;
+  width: 145px;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    /* margin-left: -187px; */
+    width: 147px;
+    height: 40px;
+    margin-left: 3px;
+  }
+}
+
 .page-footer__copyright {
   @media (min-width: @mobile-width-only) {
-    margin-right: auto;
+    display: flex;
+    width: 132px;
+    /* margin-left: 77px; */
     margin-left: auto;
-    width: 150px;
+    margin-right: auto;
+    margin-top: 33px;
+    padding-top: 5px;
   }
 
   @media (min-width: @tablet-width) {
+    display: flex;
     width: 150px;
-    margin-top: 90px;
-    margin-left: 90px;
+    margin-top: 39px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    /* width: 175px; */
+    width: auto;
+    /* margin-right: -10px; */
+    margin-left: 0;
+    margin-top: 0;
   }
 }

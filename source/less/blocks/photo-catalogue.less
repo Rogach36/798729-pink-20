@@ -1,17 +1,100 @@
-.photo-catalogue {
+.photo-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.photo-catalogue__item {
+.photo-list__photo {
+  display: block;
+  margin-bottom: -4px;
+}
+
+.photo-catalogue__photo-pan {
+  max-height: 138px;
+  width: 100%;
+  object-fit: cover;
+
+  @media (max-width: 659px) {
+    margin-bottom: -3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-height: 510px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 507px;
+    margin-bottom: 3px;
+  }
+}
+
+.photo-catalogue__photo--marker {
+  @media (max-width: 659px) {
+    margin-bottom: 0;
+    display: block;
+  }
+}
+
+.photo-list__item {
   background-color: @grey-bg;
+
+  @media (max-width: 659px) {
+    &:nth-child(1) {
+      margin-bottom: 27px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 29px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 27px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 29px;
+    }
+
+    &:nth-child(5) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.photo-catalogue__user-name,
+.photo-catalogue__user-comment {
+  margin-left: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 27px;
+  }
 }
 
 .photo-catalogue__user-name {
   font-weight: bold;
+
+  @media (max-width: 659px) {
+    margin-bottom: -15px;
+    padding-top: 17px;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-top: 31px;
+  }
 }
 
+.photo-catalogue__user-name--last {
+  @media (max-width: 659px) {
+    margin-top: -5px;
+  }
+}
+
+.photo-list__time,
 .photo-catalogue__time {
   font-weight: 300;
   font-size: 12px;
@@ -20,20 +103,54 @@
 
 .photo-catalogue__user-comment {
   font-size: 14px;
+
+  @media (max-width: 659px) {
+    margin-bottom: -1px;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    margin-top: -14px;
+    /* margin-left: 30px; */
+    padding-bottom: 10px;
+  }
+}
+
+.photo-catalogue__inter {
+  display: flex;
+  width: 145px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-left: auto;
+    margin-right: 3px;
+    margin-top: 21px;
+  }
 }
 
 .photo-catalogue__reaction {
   font-size: 12px;
   text-transform: uppercase;
   color: @pink;
+  width: 112px;
 }
 
 .photo-catalogue__like-btn {
+  display: block;
   width: 13px;
   height: 12px;
+  margin-top: 18px;
+  margin-left: 17px;
+  margin-right: 20px;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-left: 0;
+    margin-right: 27px;
+  }
 }

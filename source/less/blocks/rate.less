@@ -1,7 +1,70 @@
 .rate {
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
+  position: relative;
+
+  @media (min-width: @mobile-width-only) {
+    min-height: 379px;
+    padding-top: 100px;
+    margin-bottom: 45px;
+    /*косой серый фон*/
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 20px;
+      background-image: url("../img/bg-triangle-white.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: auto;
+    margin-bottom: 0;
+    padding-top: 93px;
+    padding-bottom: 70px;
+
+    &::after {
+      height: 40px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 142px;
+    padding-bottom: 97px;
+    margin-bottom: 60px;
+
+    &::after {
+      height: 73px;
+    }
+  }
 }
 
 .rate__toggles {
   text-align: center;
+  width: 90px;
+  margin: 0 auto;
+  /* margin-bottom: 35px; */
+  display: flex;
+  /* @media (min-width: @mobile-width-only) {
+    position: relative;
+    left: 112px;
+  }
+ */
+  @media (min-width: @tablet-width) {
+    position: static;
+    text-align: center;
+  }
 }
+
+/* стили для мобильной таблицы */
+@media (max-width: 659px) {
+  .rate__table {
+    position: relative;
+  }
+}
+
+/* стили для мобильной таблицы */

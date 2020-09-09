@@ -1,13 +1,145 @@
+.slider__list {
+  position: relative;
+
+   @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+
+  /* @media (min-width: @desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border: 2px solid rgba(40, 54, 69, 0.3);
+      border-right-color: transparent;
+      border-top-color: transparent;
+      top: 35px;
+      left: 6px;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border: 2px solid rgba(40, 54, 69, 0.3);
+      border-right-color: transparent;
+      border-top-color: transparent;
+      top: 35px;
+      right: 6px;
+      transform: rotate(225deg);
+    }
+  } */
+}
+
+ /* .slider__list:hover::after {
+  border-left-color: #283645;
+  border-bottom-color: #283645;
+  }
+ */
+
+  .reviews__toggle {
+    position: absolute;
+
+    @media (min-width: @desktop-width) {
+      width: 28px;
+      height: 28px;
+      border: 2px solid rgba(40, 54, 69, 0.3);
+    }
+  }
+
+  .reviews__toggle--left {
+    border-right-color: transparent;
+    border-top-color: transparent;
+    bottom: 173px;
+    left: 5px;
+    transform: rotate(45deg);
+
+    &:hover {
+      border-left-color: @text-page;
+      border-bottom-color: @text-page;
+    }
+
+    &:active {
+      border-left-color: rgba(40, 54, 69, 0.1);
+      border-bottom-color: rgba(40, 54, 69, 0.1);
+    }
+  }
+
+  .reviews__toggle--right {
+    border-right-color: transparent;
+    border-top-color: transparent;
+    bottom: 173px;
+    right: 7px;
+    transform: rotate(225deg);
+
+    &:hover {
+      border-left-color: #283645;
+      border-bottom-color: #283645;
+    }
+
+    &:active {
+      border-left-color: rgba(40, 54, 69, 0.1);
+      border-bottom-color: rgba(40, 54, 69, 0.1);
+    }
+  }
+
+/*------------------------------------------------------------------------------------*/
+
+
+.slider {
+  position: relative;
+
+  /*  @media (min-width: 660px) {
+    margin-bottom: 12px;
+  } */
+
+  @media (min-width: @desktop-width) {
+    /* margin-bottom: 0; */
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 79px;
+      height: 64px;
+      top: -111px;
+      left: 431px;
+      margin-bottom: 0;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+
 .slider__toggles {
   text-align: center;
+  width: 90px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  display: flex;
+
+
+  @media (min-width: @tablet-width) {
+    /* margin-bottom: -3px; */
+    width: 90px;
+    margin: 0 auto;
+    display: flex;
+  }
 }
 
 .slider__toggle {
   background-color: rgba(40, 54, 69, 0.3);
   border: none;
-  padding: 3px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   outline: none;
+  margin-right: /* 10px */ 16px;
+  box-sizing: content-box;
 
   &:hover {
     background-color: rgba(40, 54, 69, 0.6);
@@ -15,6 +147,36 @@
 
   &:active {
     background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
+    margin-right: 16px;
+    margin-top: 2px;
+  }
+}
+
+/* .slider__toggle--middle {
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+  }
+} */
+
+.slider__toggle--first {
+  margin-left: /* 0 */ 14px;
+  margin-top: -2px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 14px;
+  }
+}
+
+.slider__toggle--last {
+  margin-left: 3px;
+
+  @media (min-width: @tablet-width) {
+    /* margin-left: 1px; */
+    margin-left: 3px;
   }
 }
 
@@ -28,10 +190,20 @@
 .slider-table__toggle {
   background-color: rgba(40, 54, 69, 0.3);
   border: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 16px;
+  box-sizing: content-box;
+
+  /* background-color: rgba(40, 54, 69, 0.3);
+  border: none;
   padding: 3px;
   display: inline-block;
   border-radius: 50%;
   outline: none;
+  margin-right: 13px; */
 
   &:hover {
     background-color: rgba(40, 54, 69, 0.6);
@@ -46,6 +218,15 @@
   }
 }
 
+.slider-table__toggle--first {
+  margin-left: 18px;
+  /* margin-top: -2px; */
+}
+
+.slider-table__toggle--last {
+  margin-left: 3px;
+}
+
 .slider-table__toggle--current,
 .slider-table__toggle--current:hover,
 .slider-table__toggle--current:active {
@@ -53,8 +234,6 @@
   border: 3px solid @text-page;
 }
 
-.slider__list {
-  @media (min-width: @tablet-width) {
-    background-color: #f2f2f2;
-  }
+.slider-table__toggle--current {
+  margin-top: -2px;
 }
