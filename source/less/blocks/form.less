@@ -435,19 +435,17 @@
     padding-left: 21px;
   }
 
-  /* @media (min-width: @desktop-width) {
-    padding-left: 6px;
-  } */
-
   &:hover {
     border-color: @text-page;
+    
   }
 
-  &:active {
-    /* border-color: @pink; */
-    border: 2px solid #d22856;
-  }
+  &:focus {    
+    outline: none;
+    border-color: @pink;
+  } 
 }
+
 
 .form__input--sername {
   margin-bottom: 4px;
