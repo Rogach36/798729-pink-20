@@ -65,6 +65,13 @@
       background-position: center center;
       right: 21px;
       bottom: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+        background-size: cover;
+        right: 0;
+        width: 659px;
+      }
     }
   }
 
@@ -84,6 +91,13 @@
       right: 11px;
       background-image: url("../img/iphone-hand-desktopM1x.png");
       background-position: 0 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: cover;
+        right: 0;
+        width: 934px;
+      }
     }
   }
 }
@@ -116,7 +130,7 @@
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-back-mobile@2x.jpg");        
+        background-image: url("../img/bg-back-mobile@2x.jpg");
       }
     }
   }
@@ -202,6 +216,11 @@
       background-image: url("../img/iphone-hand-mobile@1x.png");
       background-position: 0 0;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-hand-mobile@2x.png");
+        background-size: cover;
+     }
     }
   }
 }
