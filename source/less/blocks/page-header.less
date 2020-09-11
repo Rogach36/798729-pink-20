@@ -25,9 +25,9 @@
 /* .page-header-index--nav-opened {
   .page-header--index {
     position: relative;
-    
+
     &::before {
-      
+
       @media (min-width: @desktop-width) {
         content: "";
         display: block;
@@ -332,7 +332,7 @@
       }
 
       @media (min-width: @desktop-width) {
-        display: none;
+        background-image: none;
       }
 
      /*  @media (min-width: @desktop-width) {
@@ -429,6 +429,10 @@
         }
       }
 
+      @media (min-width: @desktop-width) {
+        background-image: none;
+      }
+
       /* @media (min-width: @desktop-width) {
         background-image: url("../img/bg-back-desktop@1x.jpg");
         background-size: 245%;
@@ -500,9 +504,9 @@
 
 .page-header {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 
-  &::before {    
+  &::before {
     @media (min-width: @desktop-width) {
       content: "";
       display: block;
@@ -515,7 +519,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
-      min-height: 853px;      
+      min-height: 853px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/bg-back-desktop@2x.jpg");
