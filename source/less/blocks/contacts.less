@@ -40,7 +40,7 @@
   position: absolute;
   display: block;
   width: 100%;
-  min-width: 1200px;
+  min-width: 320px;
   height: auto;
   min-height: 100%;
   top: 50%;
@@ -48,15 +48,18 @@
   transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
-    min-width: 1055px;
-    top: 16%;
-    left: 40%;
+    min-width: 660px;
+    top: 0;
+    /* top: 16%;
+    left: 40%; */
   }
 
   @media (min-width: @desktop-width) {
     /* min-width: 1200px; */
-    top: 43%;
+    /* top: 43%;*/
+    top: 32%;
     left: 50%;
+    min-width: 1200px;
   }
 }
 
