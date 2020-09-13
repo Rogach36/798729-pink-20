@@ -3,10 +3,12 @@
 
   @media (min-width: @mobile-width-only) {
     display: block;
+    margin-top: 37px;
   }
 
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-top: 0;
     /* flex-shrink: 0; */
     /* justify-content: space-around; */
   }
@@ -14,8 +16,6 @@
   @media (min-width: @desktop-width) {
     /* margin-top: 0; */
     margin-top: 44px;
-
-
   }
 }
 
@@ -52,14 +52,14 @@
 
 .page-footer__logo {
   width: 143px;
+  position: relative;
 
   @media (min-width: @mobile-width-only) {
-    margin-left: 15%;
+    margin-left: /* 15% */24%;
   }
 
   @media (min-width: @tablet-width) {
-    /* width: 145px;
-    height: 40px; */
+    padding-top: 32px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -68,14 +68,46 @@
     /* margin-right: 233px; */
     margin-right: 0;
     margin-left: 0;
-    margin-top: 38px;
   }
 }
 
-.page-footer__logo:active {
+/*------------лого в свг-----------------*/
+
+.page-footer__logo-desk {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.page-footer__logo-mobil {
+  position: absolute;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo:hover .page-footer__logo-word path {
+  fill: @pink;
+}
+
+.page-footer__logo:active .page-footer__logo-word path {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.page-footer__logo:active .page-footer__logo-glasses path {
+  fill: fade(#d22856, 30%);
+}
+
+/*------------лого в свг-----------------*/
+
+
+/* .page-footer__logo:active {
   display: block;
   opacity: 0.3;
-}
+} */
 
 .page-footer__logo img {
   margin-top: 33px;
