@@ -32,7 +32,6 @@
 
   @media (min-width: @desktop-width) {
     height: 502px;
-    /* margin-bottom: -38px; */
   }
 }
 
@@ -40,7 +39,7 @@
   position: absolute;
   display: block;
   width: 100%;
-  min-width: 1200px;
+  min-width: 320px;
   height: auto;
   min-height: 100%;
   top: 50%;
@@ -48,15 +47,14 @@
   transform: translate(-50%, -50%);
 
   @media (min-width: @tablet-width) {
-    min-width: 1055px;
-    top: 16%;
-    left: 40%;
+    min-width: 660px;
+    top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    /* min-width: 1200px; */
-    top: 43%;
+    top: 32%;
     left: 50%;
+    min-width: 1200px;
   }
 }
 
@@ -241,27 +239,6 @@
   text-align: center;
   margin-bottom: 35px;
 
-  /* &::after {
-    content: "";
-    position: absolute;
-     background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    width: 140px;
-    height: 50px;
-    top: 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-     background-image: url("../img/bg-triangle-white-footer.svg");
-    background-repeat: no-repeat;
-    width: 140px;
-    height: 50px;
-    transform: scale(-1, 1);
-    right: 0;
-  }
- */
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
@@ -270,51 +247,3 @@
     margin-bottom: -32px;
   }
 }
-
-/* стили для треугольного фона, черновик
-  @media (min-width: @tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url(../img/bg-triangle-white-footer.svg);
-      background-repeat: no-repeat;
-      width: 140px;
-      height: 50px;
-      top: 0;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url(../img/bg-triangle-white-footer.svg);
-      background-repeat: no-repeat;
-      width: 240px;
-      height: 70px;
-      transform: scale(-1, 1);
-      right: 0;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url(../img/bg-triangle-white-footer.svg);
-      background-repeat: no-repeat;
-      width: 660px;
-      height: 290px;
-      top: 0;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url(../img/bg-triangle-white-footer.svg);
-      background-repeat: no-repeat;
-      width: 400px;
-      height: 200px;
-      transform: scale(-1, 1);
-      right: 0;
-    }
-  }
-  */
