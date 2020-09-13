@@ -1,0 +1,186 @@
+.logo {
+  display: block;
+  position: relative;
+  width: 78px;
+  height: 49px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+
+  @media (min-width: @tablet-width) {
+    width: 146px;
+    height: 91px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 160px;
+    padding: 0;
+    height: auto;
+    display: block;
+  }
+}
+
+.logo img {
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.logo__svg {
+  @media (max-width: 659px) {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+  }
+}
+
+.logo:hover .logo__word path {
+  fill: @pink;
+}
+
+.logo:active .logo__word path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.logo:hover .logo__glasses path {
+  fill: @pink;
+}
+
+.logo:active .logo__glasses path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.logo:hover .logo__glasses-tablet path {
+  fill: @pink;
+}
+
+.logo:active .logo__glasses-tablet path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+
+.logo__glasses {
+  @media (max-width: 659px) {
+    display: none;
+  }
+}
+
+.logo__glasses-tablet {
+  @media (max-width: 659px) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo__point {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__star1,
+.logo__star2,
+.logo__star3 {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo-footer {
+  width: 143px;
+  position: relative;
+
+  @media (min-width: @mobile-width-only) {
+    margin-left: /* 15% */24%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 32px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    /* margin-right: 233px; */
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/*------------лого в свг-----------------*/
+
+.logo-footer__desk {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo-footer__mobil {
+  position: absolute;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.logo-footer:hover .logo-footer__word path {
+  fill: @pink;
+}
+
+.logo-footer:active .logo-footer__word path {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.logo-footer:active .logo-footer__glasses path {
+  fill: fade(#d22856, 30%);
+}
+
+/*------------лого в свг-----------------*/
+
+
+.logo-footer img {
+  margin-top: 33px;
+  margin-left: 25px;
+  width: 145px;
+  height: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 37px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    /* margin-left: -187px; */
+    width: 147px;
+    height: 40px;
+    margin-left: 3px;
+    margin-top: 0;
+  }
+}
