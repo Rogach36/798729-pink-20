@@ -33,14 +33,7 @@
   background-color: @text-page;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
-
-  &:hover {
-    color: @pink;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+  color: @white;
 
   @media (min-width: @desktop-width) {
     padding-top: 15px;
@@ -48,6 +41,16 @@
     background-color: transparent;
     border-top: none;
     border-bottom: none;
+  }
+}
+
+.site-list__item a:not(.site-list__item--current) {
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 

@@ -198,8 +198,8 @@
         display: block;
         position: absolute;
         left: 0;
-        top: -110px;
         right: 0;
+        bottom: 0;
         background-image: url("../img/bg-back-tablet@1x.jpg");
         background-position: center top;
         background-repeat: no-repeat;
@@ -208,6 +208,7 @@
 
         @media (min-resolution: 2dppx) {
           background-image: url("../img/bg-back-tablet@2x.jpg");
+          background-size: 180%;
         }
       }
 
@@ -304,6 +305,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/bg-back-desktop@2x.jpg");
+        top: 12px;
       }
     }
   }
