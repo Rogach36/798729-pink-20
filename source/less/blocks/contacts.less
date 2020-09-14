@@ -24,6 +24,18 @@
       height: 103px;
     }
   }
+/*маркер*/
+  &::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 0;
+    top: 0;
+    display: block;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     height: 377px;
@@ -34,6 +46,7 @@
     height: 502px;
   }
 }
+
 
 .contacts__map-img {
   position: absolute;
@@ -52,7 +65,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 32%;
+    top: 43%;
     left: 50%;
     min-width: 1200px;
   }
