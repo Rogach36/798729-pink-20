@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("csso");
+const webp = requier("gulp-webp");
 
 // Styles
 
@@ -51,3 +52,13 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+//WebP
+
+const webp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.webp = webp;
