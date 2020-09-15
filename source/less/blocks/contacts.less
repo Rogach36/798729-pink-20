@@ -30,11 +30,22 @@
     position: absolute;
     width: 36px;
     height: 36px;
-    left: 0;
-    top: 0;
+    left: 44%;
+    top: 47%;
     display: block;
     background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
+    z-index: 12;
+
+    @media (min-width: @tablet-width) {
+      left: 47%;
+      top: 51%;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 48%;
+      top: 54%;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -65,7 +76,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 43%;
+    top: 51%;
     left: 50%;
     min-width: 1200px;
   }
