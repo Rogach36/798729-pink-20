@@ -1,7 +1,7 @@
 .slider__list {
   position: relative;
 
-   @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     background-color: @white;
   }
 }
@@ -16,41 +16,41 @@
   }
 }
 
-  .reviews__toggle--left {
-    border-right-color: transparent;
-    border-top-color: transparent;
-    bottom: 173px;
-    left: 5px;
-    transform: rotate(45deg);
+.reviews__toggle--left {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  bottom: 173px;
+  left: 5px;
+  transform: rotate(45deg);
 
-    &:hover {
-      border-left-color: @text-page;
-      border-bottom-color: @text-page;
-    }
-
-    &:active {
-      border-left-color: rgba(40, 54, 69, 0.1);
-      border-bottom-color: rgba(40, 54, 69, 0.1);
-    }
+  &:hover {
+    border-left-color: @text-page;
+    border-bottom-color: @text-page;
   }
 
-  .reviews__toggle--right {
-    border-right-color: transparent;
-    border-top-color: transparent;
-    bottom: 173px;
-    right: 7px;
-    transform: rotate(225deg);
-
-    &:hover {
-      border-left-color: #283645;
-      border-bottom-color: #283645;
-    }
-
-    &:active {
-      border-left-color: rgba(40, 54, 69, 0.1);
-      border-bottom-color: rgba(40, 54, 69, 0.1);
-    }
+  &:active {
+    border-left-color: rgba(40, 54, 69, 0.1);
+    border-bottom-color: rgba(40, 54, 69, 0.1);
   }
+}
+
+.reviews__toggle--right {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  bottom: 173px;
+  right: 7px;
+  transform: rotate(225deg);
+
+  &:hover {
+    border-left-color: #283645;
+    border-bottom-color: #283645;
+  }
+
+  &:active {
+    border-left-color: rgba(40, 54, 69, 0.1);
+    border-bottom-color: rgba(40, 54, 69, 0.1);
+  }
+}
 
 .slider {
   position: relative;
