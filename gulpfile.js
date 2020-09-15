@@ -68,11 +68,10 @@ exports.webp = webp;
 //svg-sprite
 
 const sprite = () => {
-  return gulp.src("source/img/**/icon-*.svg")
+  return gulp.src("source/img/icon-.svg")
     .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
+    .pipe(rename(sprite.svg))
+    .pipe(gulp.dest(sourceimg))
 }
 
 exports.sprite = sprite;
-
