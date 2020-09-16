@@ -57,13 +57,13 @@ exports.default = gulp.series(
 
 //WebP
 
-// const webp = () => {
-//   return gulp.src("source/img/**/*.{png,jpg}")
-//     .pipe(webp({quality: 90}))
-//     .pipe(gulp.dest("source/img"))
-// }
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+}
 
-// exports.webp = webp;
+exports.webp = createWebp;
 
 //svg-sprite
 
