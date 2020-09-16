@@ -72,6 +72,6 @@ const sprite = () => {
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("source/img"))
- }
+}
 
- exports.sprite = sprite;
+exports.sprite = sprite;
