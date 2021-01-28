@@ -21,6 +21,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
+    .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
